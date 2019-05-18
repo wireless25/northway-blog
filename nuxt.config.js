@@ -7,13 +7,16 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: "Northway",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: "Traveling northway with a VW T4 California from 1993" }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Titillium+Web:400,900' }
+    ]
   },
 
   /*
