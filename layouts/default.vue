@@ -27,10 +27,50 @@ export default {
   --scale-font: 1;
 }
 
+@media(max-height: 920px) {
+  :root {
+    --scale-element:0.95;
+    --scale-font:0.95}
+}
+
+@media(max-height: 805px) {
+  :root {
+    --scale-element:0.9;
+    --scale-font:0.9}
+}
+
+@media(max-height: 685px) {
+  :root {
+    --scale-element:0.85;
+    --scale-font:0.85}
+}
+
+body,html {
+  min-height: 100vh;
+  background: #fff
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: #373737;
   margin: 0;
+  line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto
 }
 
 .main-content {
@@ -41,9 +81,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Serif', serif;
+  text-align: center;
+  font-weight: 700;
+}
+
+h1 {
   font-size: 42px;
   font-size: calc((.02881*100vw + 29.89831px)*var(--scale-font));
-  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
+}
+
+h3 {
+  font-size: 26px;
+  font-size: calc((.01017*100vw + 21.72881px)*var(--scale-font));
 }
 
 p {

@@ -1,22 +1,28 @@
 <template>
   <section id="about-page">
-    <h1>{{ title }}</h1>
-    <img class="hero-img" :src="heroimg" :alt="title">
-    <p>{{ content }}</p>
+    <h1>{{ story.content.title }}</h1>
+    <img class="hero-img" :src="story.content.heroimg" :alt="title">
+    <div v-html="content"></div>
   </section>
 </template>
 
 <script>
+import marked from 'marked'
+
 export default {
+  data () {
+    return { story: { content: { content: '' } } }
+  },
+  computed: {
+    content () {
+      return marked(this.story.content.content)
+    }
+  },
   asyncData(context) {
     return context.app.$storyapi.get('cdn/stories/about', {
       version: 'draft'
     }).then (res => {
-      return {
-        title: res.data.story.content.title,
-        heroimg: res.data.story.content.heroimg,
-        content: res.data.story.content.content
-      }
+      return res.data
     })
   }
 }
