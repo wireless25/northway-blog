@@ -2,7 +2,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <div id="logo">
-        <span>N</span>
+        <a href="/">N</a>
       </div>
       <ul class="nav-links">
         <nuxt-link to="/blog" tag="li" class="nav-link"><a>All Posts</a></nuxt-link>
@@ -80,14 +80,31 @@ export default {}
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #373737;
   position: absolute;
+  transition: background .3s ease;
 }
 
-#logo span {
+#logo:hover {
+  background: rgb(242, 115, 33);
+  transition: background .3s ease;
+}
+
+#logo:hover a {
+  color: #fff;
+  transition: color .3s ease;
+}
+
+#logo a {
   font-size: 40px;
   font-family: 'PT Serif', serif;
   font-weight: 700;
+  text-decoration: none;
+  color: #373737;
+  transition: color .3s ease;
+}
+
+#logo a:hover {
+  text-decoration: none;
 }
 
 </style>
