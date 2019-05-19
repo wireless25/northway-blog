@@ -1,4 +1,4 @@
-<template>
+<template lang="md">
   <div>
     <TheHeader />
     <main class="main-content">
@@ -27,6 +27,8 @@ body {
 }
 
 .main-content {
-  margin-top: 4.5rem;
+  margin: 4.5rem auto;
+  max-width: 60rem;
+  padding-top: 2rem;
 }
 </style>

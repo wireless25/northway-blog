@@ -1,12 +1,33 @@
 <template>
   <section id="about-page">
-    <h1>Hi thats us</h1>
-    <p>We are super nice people blogging and traveling</p>
+    <h1>{{ title }}</h1>
+    <img class="hero-img" :src="heroimg" :alt="title">
+    <p>{{ content }}</p>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  asyncData(context) {
+    return context.app.$storyapi.get('cdn/stories/about', {
+      version: 'draft'
+    }).then (res => {
+      return {
+        title: res.data.story.content.title,
+        heroimg: res.data.story.content.heroimg,
+        content: res.data.story.content.content
+      }
+    })
+  }
+}
 </script>
 
-<style lang="css"></style>
+<style>
+#about-page p {
+  white-space: pre-line;
+}
+
+.hero-img {
+  width: 100%;
+}
+</style>
