@@ -15,7 +15,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Titillium+Web:400,900' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito+Sans|PT+Serif:700' }
     ]
   },
 

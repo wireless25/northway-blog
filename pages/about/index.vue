@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style>
+#about-page {
+  padding: 0 30px;
+}
+
 #about-page p {
   white-space: pre-line;
 }

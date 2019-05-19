@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 #posts {
-  padding-top: 2rem;
+  padding: 2rem 30px;
   display: flex;
   justify-content: center;
   align-items: center;

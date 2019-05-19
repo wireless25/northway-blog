@@ -1,8 +1,8 @@
 <template>
   <div id="post">
-    <img :src="image" :alt="title">
     <section class="post-content">
       <h1>{{ title }}</h1>
+      <img :src="image" :alt="title">
       <p>{{ content }}</p>
     </section>
   </div>
@@ -31,5 +31,10 @@ export default {
 
 .post-content {
   white-space: pre-line;
+  padding: 0 30px;
+}
+
+h1 {
+  font-size: 43px;
 }
 </style>

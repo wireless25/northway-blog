@@ -23,12 +23,18 @@ export default {
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #373737;
+  margin: 0;
 }
 
 .main-content {
   margin: 4.5rem auto;
   max-width: 60rem;
-  padding-top: 2rem;
+  padding-top: .1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', serif;
 }
 </style>
