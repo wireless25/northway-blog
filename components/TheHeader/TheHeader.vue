@@ -89,4 +89,5 @@ export default {}
   font-family: 'PT Serif', serif;
   font-weight: 700;
 }
+
 </style>
