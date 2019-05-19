@@ -1,4 +1,5 @@
 import pkg from './package'
+const axios = require('axios')
 
 export default {
   mode: 'universal',
@@ -39,9 +40,35 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    ['storyblok-nuxt', {accessToken: 'OFfXWKmTJP9cC2h8BrQT0gtt', cacheProvider: 'memory'}],
+    [
+      'storyblok-nuxt',
+      {
+        accessToken:
+          process.env.NODE_ENV == 'production'
+            ? 'hVOMD3fXYrzAZGWVbVKVjgtt'
+            : 'OFfXWKmTJP9cC2h8BrQT0gtt',
+        cacheProvider: 'memory'
+      }
+    ],
     '@nuxtjs/markdownit'
   ],
+
+generate: {
+  routes: function() {
+    return axios.get(
+      'https://api.storyblok.com/v1/cdn/stories?version=published&token=hVOMD3fXYrzAZGWVbVKVjgtt&starts_with=blog&cv=' + Math.floor(Date.now() / 1e3)
+  ).then(res => {
+    const blogPosts = res.data.stories.map(bp => bp.full_slug)
+    return [
+      '/',
+      '/blog',
+      '/about',
+      ...blogPosts
+    ]
+  })
+  }
+},
+
   /*
    ** Axios module configuration
    */

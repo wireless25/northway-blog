@@ -8,6 +8,7 @@
 
 <script>
 import marked from 'marked'
+import storyblokLivePreview from '@/mixins/storyblokLivePreview'
 
 export default {
   data () {
@@ -18,9 +19,13 @@ export default {
       return marked(this.story.content.content)
     }
   },
+  mixins: [storyblokLivePreview],
   asyncData(context) {
+    // Check if we are in the editor mode
+    let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
+
     return context.app.$storyapi.get('cdn/stories/about', {
-      version: 'draft'
+      version: version
     }).then (res => {
       return res.data
     })
