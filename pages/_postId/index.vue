@@ -1,24 +1,31 @@
 <template>
   <div id="post">
     <section class="post-content">
-      <h1>{{ title }}</h1>
-      <img :src="image" :alt="title">
-      <p>{{ content }}</p>
+      <h1>{{ story.content.title }}</h1>
+      <img :src="story.content.thumbnail">
+      <div class="blog__body" v-html="content">
+      </div>
     </section>
   </div>
 </template>
 
 <script>
+import marked from 'marked'
+
 export default {
+  data () {
+    return { story: { content: { content: '' } } }
+  },
+  computed: {
+    content () {
+      return marked(this.story.content.content)
+    }
+  },
   asyncData(context) {
     return context.app.$storyapi.get('cdn/stories/blog/' + context.params.postId, {
       version: 'draft'
     }).then(res => {
-      return {
-        image: res.data.story.content.thumbnail,
-        title: res.data.story.content.title,
-        content: res.data.story.content.content
-      }
+      return res.data
     })
   }
 }
@@ -32,9 +39,5 @@ export default {
 .post-content {
   white-space: pre-line;
   padding: 0 30px;
-}
-
-h1 {
-  font-size: 43px;
 }
 </style>

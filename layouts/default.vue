@@ -22,6 +22,11 @@ export default {
   box-sizing: border-box;
 }
 
+:root {
+  --scale-element: 1;
+  --scale-font: 1;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: #373737;
@@ -36,5 +41,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Serif', serif;
+  font-size: 42px;
+  font-size: calc((.02881*100vw + 29.89831px)*var(--scale-font));
+  text-align: center;
+}
+
+p {
+  font-size: calc((.00339*100vw + 14.57627px)*var(--scale-font));
+  font-weight: 100;
 }
 </style>
