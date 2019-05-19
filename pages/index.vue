@@ -3,10 +3,10 @@
     <PostPreview
       v-for="post in posts"
       :key="post.id"
-      :title="post.title"
       :excerpt="post.previewText"
       :thumbnailImage="post.thumbnailUrl"
-      :id="post.id" />
+      :id="post.id"
+      :title="post.title" />
   </section>
 </template>
 
@@ -17,23 +17,28 @@ export default {
   components: {
     PostPreview
   },
-  data() {
-    return {
-      posts: [
-        {
-          title: 'A new beginning',
-          previewText: 'Subline so cool',
-          thumbnailUrl: 'https://source.unsplash.com/1600x900/?vanlive/400x160',
-          id: 'a-new-beginning'
-        },
-        {
-          title: 'A beginning',
-          previewText: 'Subline so cool',
-          thumbnailUrl: 'https://source.unsplash.com/1600x900/?camper/400x160',
-          id: 'a-beginning'
-        }
-      ]
-    }
+  asyncData (context) {
+    // Check if we are in the editor mode
+    let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
+
+    // Load the JSON from the API
+    return context.app.$storyapi.get('cdn/stories', {
+      version: version,
+      starts_with: 'blog/'
+    }).then((res) => {
+      return {
+        posts: res.data.stories.map(bp => {
+          return {
+            id: bp.slug,
+            previewText: bp.content.summary,
+            thumbnailUrl: bp.content.thumbnail,
+            title: bp.content.title
+          }
+        })
+      }
+    }).catch((res) => {
+      context.error({ statusCode: res.response.status, message: res.response.data })
+    })
   }
 }
 </script>

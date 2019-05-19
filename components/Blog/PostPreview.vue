@@ -1,7 +1,10 @@
 <template>
   <nuxt-link :to="id">
     <article class="post-preview">
-      <div :style="{backgroundImage: 'url(' + thumbnailImage + ')'}" class="post-preview-thumbnail"></div>
+      <div
+        :style="{ backgroundImage: 'url(' + thumbnailImage + ')' }"
+        class="post-preview-thumbnail"
+      ></div>
       <div class="post-preview-content">
         <h1>{{ title }}</h1>
         <p>{{ excerpt }}</p>
@@ -13,11 +16,11 @@
 <script>
 export default {
   props: {
-    title: {
+    excerpt: {
       type: String,
       required: true
     },
-    excerpt: {
+    title: {
       type: String,
       required: true
     },
@@ -42,7 +45,7 @@ a {
 
 .post-preview {
   border-radius: 3px;
-  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   height: 20rem;
   margin: 1rem;
 }
