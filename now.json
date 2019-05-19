@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "northway",
+    "alias": ["northway.blog", "www.northway.blog" ],
     "builds": [
         { "src": "package.json", "use": "@now/static-build" }
     ]
