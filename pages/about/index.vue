@@ -36,6 +36,8 @@ export default {
 <style>
 #about-page {
   padding: 0 30px;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 #about-page p {

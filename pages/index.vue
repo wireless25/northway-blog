@@ -40,6 +40,7 @@ export default {
 <style scoped>
 #posts {
   padding: 2rem 30px;
-  float: left;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 </style>

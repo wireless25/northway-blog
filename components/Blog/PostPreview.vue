@@ -47,7 +47,7 @@ export default {
   float: left;
 }
 
-@media (min-width: 35rem) {
+@media (min-width: 40rem) {
   .post-preview {
     width: calc(50% - 2rem);
     margin-left: 1rem;
