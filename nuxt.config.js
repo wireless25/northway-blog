@@ -50,7 +50,10 @@ export default {
         cacheProvider: 'memory'
       }
     ],
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-140504196-1'
+    }]
   ],
 
 generate: {

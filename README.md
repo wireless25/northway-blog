@@ -17,6 +17,9 @@ $ npm start
 
 # generate static project
 $ npm run generate
+
+# for a manual deploy to now.sh
+$ now --target production
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+The repo is deployed automatically on push to the Github repo to now.sh.
