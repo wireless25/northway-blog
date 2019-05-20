@@ -40,15 +40,6 @@ export default {
 <style scoped>
 #posts {
   padding: 2rem 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media (min-width: 35rem) {
-  #posts {
-    flex-direction: row;
-  }
+  float: left;
 }
 </style>

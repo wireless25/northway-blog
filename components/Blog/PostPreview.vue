@@ -1,11 +1,11 @@
 <template>
-  <nuxt-link :to="'/blog/' + id">
-    <article class="post-preview">
-      <!-- <div
+  <nuxt-link :to="'/blog/' + id" class="post-preview">
+    <article>
+      <div
         :style="{ backgroundImage: 'url(' + thumbnailImage + ')' }"
         class="post-preview-thumbnail"
-      ></div> -->
-      <img :src="thumbnailImage" class="post-preview-thumbnail">
+      ></div>
+      <!-- <img :src="thumbnailImage" class="post-preview-thumbnail"> -->
       <div class="post-preview-content">
         <h2>{{ title }}</h2>
         <p>{{ excerpt }}</p>
@@ -38,25 +38,38 @@ export default {
 </script>
 
 <style scoped>
-a {
+.post-preview {
+  margin: 1rem 0 3rem;
   text-decoration: none;
   color: #373737;
   width: 100%;
+  display: block;
+  float: left;
 }
 
-.post-preview {
-  margin: 1rem 0;
+@media (min-width: 35rem) {
+  .post-preview {
+    width: calc(50% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.post-preview-content h2 {
+  font-size: 30px;
+  font-size: calc((.01695*100vw + 22.88136px)*var(--scale-font));
+  text-align: left;
+}
+
+.post-preview-content p {
   font-size: 14px;
+  font-size: calc((.00508*100vw + 11.86441px)*var(--scale-font));
 }
 
 .post-preview-thumbnail {
   background-position: center;
   background-size: cover;
   width: 100%;
-}
-
-
-.post-preview-content h2 {
-  font-size: 30px;
+  height: 400px;
 }
 </style>
