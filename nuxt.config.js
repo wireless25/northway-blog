@@ -9,6 +9,10 @@ export default {
    */
   head: {
     title: "Northway",
+    htmlAttrs: {
+      lang: 'en',
+      dir: 'ltr'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
