@@ -20,7 +20,8 @@
     "cross-env": "^5.2.0",
     "marked": "^0.6.2",
     "nuxt": "^2.4.0",
-    "storyblok-nuxt": "^1.0.1"
+    "storyblok-nuxt": "^1.0.1",
+    "vue-moment": "^4.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
