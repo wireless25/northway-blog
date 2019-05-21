@@ -1,7 +1,10 @@
 <template>
   <footer class="bottom-footer">
     <div class="footer-container">
-      <p>© 2019 Northway | <a href="https://www.instagram.com/oh.north/" class="social-link">Instagram @oh.north</a></p>
+      <p>© 2019 Northway |
+        <a href="https://www.instagram.com/oh.north/" class="social-link">Instagram @oh.north</a> |
+        <a href="mailto:oh.northway@gmail.com" class="social-link">Contact</a>
+      </p>
     </div>
   </footer>
 </template>
