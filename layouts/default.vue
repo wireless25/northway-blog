@@ -48,10 +48,10 @@ export default {
     --scale-font:0.85}
 }
 
-body,html {
+/* body,html {
   min-height: 100vh;
   background: #fff
-}
+} */
 
 html {
   -webkit-overflow-scrolling: touch;

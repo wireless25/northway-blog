@@ -1,5 +1,5 @@
 <template>
-  <section id="posts">
+  <section id="posts" v-if="this.total != 0">
     <PostPreview
       v-for="post in data.stories"
       :key="post.content.slug"
@@ -7,6 +7,10 @@
       :thumbnailImage="post.content.thumbnail"
       :id="post.slug"
       :title="post.content.title" />
+  </section>
+  <section v-else class="no-posts">
+    <h1>Sorry to tell you...</h1>
+    <p>...but there are no posts yet. Come back later when we published some stuff.</p>
   </section>
 </template>
 
@@ -18,7 +22,12 @@ export default {
     PostPreview
   },
   data () {
-    return { total: 0, data: { stories: [] } }
+    return {
+      total: 0,
+      data: {
+        stories: []
+      }
+    }
   },
   asyncData (context) {
     // Check if we are in the editor mode
@@ -42,5 +51,13 @@ export default {
   padding: 2rem 30px;
   max-width: 70rem;
   margin: 0 auto;
+}
+
+.no-posts {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 30px;
+  height: calc(100vh - 300px);
+  text-align: center;
 }
 </style>
