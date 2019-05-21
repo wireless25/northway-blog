@@ -1,7 +1,7 @@
 <template>
   <section id="about-page">
     <h1>{{ story.content.title }}</h1>
-    <img class="hero-img" :src="story.content.heroimg" :alt="title">
+    <img class="hero-img" :src="story.content.heroimg">
     <div v-html="content"></div>
   </section>
 </template>
