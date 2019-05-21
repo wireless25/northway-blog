@@ -6,6 +6,6 @@
         { "src": "package.json", "use": "@now/static-build" }
     ],
     "routes": [
-    { "src": "/.*", "status": 404, "dest": "/404" }
+    { "src": "/.*", "status": 404, "dest": "/404.html" }
   ]
 }
