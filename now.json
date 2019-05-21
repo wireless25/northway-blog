@@ -4,8 +4,5 @@
     "alias": ["northway.blog", "www.northway.blog" ],
     "builds": [
         { "src": "package.json", "use": "@now/static-build" }
-    ],
-    "routes": [
-    { "src": "/.*", "status": 404, "dest": "/404.html" }
-  ]
+    ]
 }
