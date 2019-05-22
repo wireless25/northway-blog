@@ -54,7 +54,7 @@ export default {}
 }
 
 .nav-link.nuxt-link-active {
-  border-bottom: 3px solid rgb(242, 115, 33);
+  border-bottom: 3px solid var(--accent-color);
 }
 
 .nav-link a {
@@ -65,7 +65,7 @@ export default {}
 
 .nav-link a:hover,
 .nav-link.nuxt-link-active a:hover {
-  color: rgb(242, 115, 33);
+  color: var(--accent-color);
 }
 
 .nav-link a:active,
@@ -85,7 +85,7 @@ export default {}
 }
 
 #logo:hover {
-  background: rgb(242, 115, 33);
+  background: var(--accent-color);
   transition: background .3s ease;
 }
 

@@ -28,6 +28,7 @@ export default {
 :root {
   --scale-element: 1;
   --scale-font: 1;
+  --accent-color: #F49D37;
 }
 
 @media(max-height: 920px) {
