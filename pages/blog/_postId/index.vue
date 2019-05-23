@@ -2,8 +2,11 @@
   <div id="post">
     <section class="post-content">
       <h1>{{ story.content.title }}</h1>
-      <hr class="red-divider">
+      <hr class="divider">
       <span class="blog-date">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
+      <div class="tags-container">
+        <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
+      </div>
       <img :src="story.content.thumbnail">
       <div class="blog-body" v-html="content">
       </div>
@@ -52,11 +55,12 @@ export default {
   padding: 0 30px;
 }
 
-.red-divider {
+.divider {
   width: 5rem;
-  background: rgb(242, 115, 33);
+  background: var(--accent-color);
   height: .25rem;
   margin-bottom: 2rem;
+  border: none;
 }
 
 span.blog-date {
@@ -72,5 +76,17 @@ span.blog-date {
   max-width: 60rem;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.tags {
+  padding: .4rem 1rem;
+  margin: 0 .8rem 0 0;
+  background: #fcebd7;
+  border-radius: 3px;
+}
+
+.tags-container {
+  padding: 2rem 30px;
+  margin: 2rem auto;
 }
 </style>

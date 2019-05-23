@@ -20,6 +20,7 @@
 .footer-container p {
   font-size: 13px;
   font-size: calc((.00254*100vw + 11.9322px)*var(--scale-font));
+  white-space: normal;
 }
 
 .social-link {

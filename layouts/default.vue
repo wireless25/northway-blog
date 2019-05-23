@@ -108,5 +108,6 @@ h3 {
 p {
   font-size: calc((.00339*100vw + 14.57627px)*var(--scale-font));
   font-weight: 100;
+  white-space: pre-wrap;
 }
 </style>
