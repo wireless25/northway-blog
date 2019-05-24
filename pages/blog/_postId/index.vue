@@ -77,7 +77,7 @@ span.blog-date {
 }
 
 .blog-body {
-  max-width: 60rem;
+  max-width: 55rem;
   margin: 0 auto;
   padding: 0 30px;
 }

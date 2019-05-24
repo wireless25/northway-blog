@@ -68,7 +68,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   color: #373737;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 img {
@@ -98,6 +98,7 @@ h1 {
 h2 {
   font-size: 18px;
   font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
+  margin: 4rem 0 2rem;
 }
 
 h3 {
