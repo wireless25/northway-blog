@@ -7,7 +7,7 @@
       <div class="tags-container">
         <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
       </div>
-      <img :src="story.content.thumbnail">
+      <Hero :hero="story.content.thumbnail" />
       <div class="blog-body" v-html="content">
       </div>
     </section>
@@ -17,8 +17,12 @@
 <script>
 import marked from 'marked'
 import storyblokLivePreview from '@/mixins/storyblokLivePreview'
+import Hero from '@/components/Hero/Hero'
 
 export default {
+  components: {
+    Hero
+  },
   data () {
     return { story: { content: { content: '' } } }
   },

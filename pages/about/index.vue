@@ -19,6 +19,16 @@ export default {
   data () {
     return { story: { content: { content: '' } } }
   },
+  head () {
+    return {
+      title: `Northway | About us`,
+      meta: [{
+        hid: `description`,
+        property: 'description',
+        content: `Olivia and Stephan on the road with a VW T4 California from 1992. Read some insights about vanlife, camperbuilds and a lot more.`
+      }]
+    }
+  },
   computed: {
     content () {
       return marked(this.story.content.content)

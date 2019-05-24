@@ -15,8 +15,9 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Traveling northway with a VW T4 California from 1993" }
+      { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: "Traveling northway with a VW T4 California from 1993" },
+      { hid: 'keywords', name: 'keywords', content: "Vanlife,VWT4,Solar,Traveling,Campervan" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
