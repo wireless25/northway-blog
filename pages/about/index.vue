@@ -1,16 +1,21 @@
 <template>
   <section id="about-page">
     <h1>{{ story.content.title }}</h1>
-    <img class="hero-img" :src="story.content.heroimg">
-    <div v-html="content"></div>
+    <!-- <img class="hero-img" :src="story.content.heroimg"> -->
+    <Hero :hero="story.content.heroimg" />
+    <div v-html="content" id="content"></div>
   </section>
 </template>
 
 <script>
 import marked from 'marked'
 import storyblokLivePreview from '@/mixins/storyblokLivePreview'
+import Hero from '@/components/Hero/Hero'
 
 export default {
+  components: {
+    Hero
+  },
   data () {
     return { story: { content: { content: '' } } }
   },
@@ -34,7 +39,7 @@ export default {
 </script>
 
 <style>
-#about-page {
+#content {
   padding: 0 30px;
   max-width: 60rem;
   margin: 0 auto;
