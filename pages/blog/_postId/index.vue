@@ -72,7 +72,7 @@ span.blog-date {
   font-size: calc((.00339*100vw + 16.57627px)*var(--scale-font));
   color: #AAAAAA;
   text-align: center;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   display: block;
 }
 
@@ -92,5 +92,6 @@ span.blog-date {
 .tags-container {
   padding: 2rem 30px;
   margin: 2rem auto;
+  width: fit-content;
 }
 </style>

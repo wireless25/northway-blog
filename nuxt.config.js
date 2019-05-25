@@ -38,7 +38,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-moment'],
+  plugins: [
+    '~/plugins/vue-moment',
+    '~/plugins/filters'
+  ],
 
   /*
    ** Nuxt.js modules
