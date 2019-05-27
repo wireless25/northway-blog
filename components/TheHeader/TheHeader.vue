@@ -1,11 +1,9 @@
 <template>
   <header class="main-header">
     <nav class="main-nav">
-      <div id="logo">
-        <a href="/">N</a>
-      </div>
+      <a href="/" id="logo">N</a>
       <ul class="nav-links">
-        <nuxt-link to="/blog" tag="li" class="nav-link"><a>All Posts</a></nuxt-link>
+        <nuxt-link to="/" tag="li" class="nav-link"><a>All Posts</a></nuxt-link>
         <nuxt-link to="/about" tag="li" class="nav-link">
           <a>About</a>
         </nuxt-link>
@@ -53,7 +51,7 @@ export default {}
   border-bottom: 3px solid #fff;
 }
 
-.nav-link.nuxt-link-active {
+.nav-link.nuxt-link-exact-active {
   border-bottom: 3px solid var(--accent-color);
 }
 
@@ -64,7 +62,7 @@ export default {}
 }
 
 .nav-link a:hover,
-.nav-link.nuxt-link-active a:hover {
+.nav-link.nuxt-link-exact-active a:hover {
   color: var(--accent-color);
 }
 
@@ -82,29 +80,22 @@ export default {}
   height: 100%;
   position: absolute;
   transition: background .3s ease;
-}
-
-#logo:hover {
-  background: var(--accent-color);
-  transition: background .3s ease;
-}
-
-#logo:hover a {
-  color: #fff;
   transition: color .3s ease;
-}
-
-#logo a {
   font-size: 40px;
   font-family: 'PT Serif', serif;
   font-weight: 700;
   text-decoration: none;
   color: #373737;
-  transition: color .3s ease;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 }
 
-#logo a:hover {
-  text-decoration: none;
+#logo:hover {
+  background: var(--accent-color);
+  transition: background .3s ease;
+  color: #fff;
 }
 
 </style>

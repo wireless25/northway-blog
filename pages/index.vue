@@ -6,7 +6,8 @@
       :excerpt="post.content.summary"
       :thumbnailImage="post.content.thumbnail"
       :id="post.slug"
-      :title="post.content.title" />
+      :title="post.content.title"
+      :tags="post.tag_list" />
   </section>
   <section v-else class="no-posts">
     <h1>Sorry to tell you...</h1>
@@ -36,7 +37,8 @@ export default {
     // Load the JSON from the API
     return context.app.$storyapi.get('cdn/stories', {
       version: version,
-      starts_with: 'blog/'
+      starts_with: 'blog/',
+      // with_tag: 'solar'
     }).then((res) => {
       return res
     }).catch((res) => {

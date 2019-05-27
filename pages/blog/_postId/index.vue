@@ -4,9 +4,9 @@
       <h1>{{ story.content.title }}</h1>
       <hr class="divider">
       <span class="blog-date">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
-      <div class="tags-container">
+      <!-- <div class="tags-container">
         <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
-      </div>
+      </div> -->
       <Hero :hero="story.content.thumbnail" />
       <div class="blog-body" v-html="content">
       </div>
@@ -50,6 +50,7 @@ export default {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
   padding: 0 30px;
 }
 #post img {
@@ -82,16 +83,16 @@ span.blog-date {
   padding: 0 30px;
 }
 
-.tags {
+/* .tags {
   padding: .4rem 1rem;
   margin: 0 .8rem 0 0;
-  background: #fcebd7;
-  border-radius: 3px;
+  background: #799695;
+  color: #fff;
 }
 
 .tags-container {
   padding: 2rem 30px;
   margin: 2rem auto;
   width: fit-content;
-}
+} */
 </style>

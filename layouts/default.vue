@@ -28,7 +28,7 @@ export default {
 :root {
   --scale-element: 1;
   --scale-font: 1;
-  --accent-color: #F49D37;
+  --accent-color: #466362;
 }
 
 @media(max-height: 920px) {
@@ -69,6 +69,35 @@ body {
   color: #373737;
   margin: 0;
   line-height: 1.7;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+span::selection,
+.social-link::selection,
+.nav-link a::selection {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+h1::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection,
+p::-moz-selection,
+span::-moz-selection,
+.social-link::-moz-selection,
+.nav-link a::-moz-selection {
+  background: var(--accent-color);
+  color: #fff;
 }
 
 img {

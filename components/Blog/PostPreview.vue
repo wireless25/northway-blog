@@ -1,13 +1,16 @@
 <template>
   <nuxt-link :to="'/blog/' + id" class="post-preview">
     <article>
-      <div
-        :style="{ backgroundImage: 'url(' + thumbnailImage + ')' }"
-        class="post-preview-thumbnail"
-      ></div>
+      <div class="post-preview-thumbnail">
+        <div
+          :style="{ backgroundImage: 'url(' + thumbnailImage + ')' }"
+          class="post-preview-image"
+        ></div>
+      </div>
       <!-- <img :src="thumbnailImage" class="post-preview-thumbnail"> -->
       <div class="post-preview-content">
         <h2>{{ title }}</h2>
+        <!-- <span class="preview-tags" v-for="tag in tags">{{ tag }}</span> -->
         <p>{{ excerpt }}</p>
       </div>
     </article>
@@ -33,6 +36,9 @@ export default {
       type: String,
       required: true
     }
+    // tags: {
+    //   type: Array
+    // }
   }
 }
 </script>
@@ -66,10 +72,29 @@ export default {
   font-size: calc((.00508*100vw + 11.86441px)*var(--scale-font));
 }
 
-.post-preview-thumbnail {
+.post-preview-image {
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 400px;
+  transition: all .3s ease;
+}
+
+/* .preview-tags {
+  font-size: 14px;
+  font-size: calc((.00508*100vw + 11.86441px)*var(--scale-font));
+} */
+
+.post-preview:hover .post-preview-image {
+  transform: scale(1.03);
+  transition: all .3s ease;
+}
+
+.post-preview:hover {
+  color: var(--accent-color);
+}
+
+.post-preview-thumbnail {
+  overflow: hidden;
 }
 </style>
