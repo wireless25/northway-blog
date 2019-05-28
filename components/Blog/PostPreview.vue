@@ -65,6 +65,7 @@ export default {
   font-size: 30px;
   font-size: calc((.01695*100vw + 22.88136px)*var(--scale-font));
   text-align: left;
+  margin: 1rem 0
 }
 
 .post-preview-content p {

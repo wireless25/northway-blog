@@ -69,6 +69,7 @@ body {
   color: #373737;
   margin: 0;
   line-height: 1.7;
+  font-weight: 300;
 }
 
 h1::selection,
@@ -125,19 +126,19 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
-  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
   margin: 4rem 0 2rem;
-}
-
-h3 {
   font-size: 26px;
   font-size: calc((.01017*100vw + 21.72881px)*var(--scale-font));
 }
 
+h3 {
+  font-size: 18px;
+  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
+}
+
 p {
   font-size: calc((.00339*100vw + 14.57627px)*var(--scale-font));
-  font-weight: 100;
+  font-weight: 300;
   white-space: pre-wrap;
 }
 </style>

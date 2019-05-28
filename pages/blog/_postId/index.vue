@@ -3,11 +3,12 @@
     <section class="post-content">
       <h1>{{ story.content.title }}</h1>
       <hr class="divider">
-      <span class="blog-date">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
+      <span class="blog-date">{{ story.content.date | moment("D. MMMM YYYY") }}</span>
       <!-- <div class="tags-container">
         <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
       </div> -->
       <Hero :hero="story.content.thumbnail" />
+      <p class="intro">{{ story.content.summary }}</p>
       <div class="blog-body" v-html="content">
       </div>
     </section>
@@ -77,10 +78,25 @@ span.blog-date {
   display: block;
 }
 
-.blog-body {
+.blog-body,
+.intro {
   max-width: 55rem;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.intro {
+  font-weight: 400;
+  font-size: 18px;
+  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
+  line-height: 1.3;
+  margin: 2rem auto;
+}
+
+@media (min-width: 40rem) {
+  .intro {
+    margin: 3.5rem auto;
+  }
 }
 
 /* .tags {
