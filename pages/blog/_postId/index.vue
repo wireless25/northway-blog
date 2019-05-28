@@ -3,7 +3,7 @@
     <section class="post-content">
       <h1>{{ story.content.title }}</h1>
       <hr class="divider">
-      <span class="blog-date">{{ story.content.date | moment("D. MMMM YYYY") }}</span>
+      <span class="blog-date">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
       <!-- <div class="tags-container">
         <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
       </div> -->
