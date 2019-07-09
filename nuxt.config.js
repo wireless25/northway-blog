@@ -19,6 +19,9 @@ export default {
       { hid: 'description', name: 'description', content: "Traveling northway with a VW T4 California from 1993" },
       { hid: 'keywords', name: 'keywords', content: "Vanlife,VWT4,Solar,Traveling,Campervan" }
     ],
+    script: [
+      { src: 'https://js.stripe.com/v3' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:300,400|PT+Serif:700' }
