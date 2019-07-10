@@ -48,7 +48,6 @@ export default {
     --scale-element:0.85;
     --scale-font:0.85}
 }
-
 /* body,html {
   min-height: 100vh;
   background: #fff
