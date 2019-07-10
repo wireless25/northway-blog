@@ -141,13 +141,25 @@ p {
   font-weight: 300;
   white-space: pre-wrap;
 }
+blockquote {
+  margin: 0;
+}
+blockquote p {
+  font-size: 26px;
+  font-size: calc((.01017*100vw + 21.72881px)*var(--scale-font));
+  font-family: 'PT Serif', serif;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--accent-color);
+}
 
 input,
 select,
 button {
   border: solid 2px var(--accent-color);
   font-family: 'Nunito Sans', sans-serif;
-  padding: .6em 1.4em .5em .8em;
+  padding: 10px 1.4em 10px .8em;
   font-size: 1rem;
   font-weight: 300;
   border-radius: 0;
@@ -176,11 +188,13 @@ button {
 .select-css:hover {
     border-color: #888;
 }
-.select-css:focus {
-    border-color: #aaa;
+.select-css:focus,
+input:focus,
+button:focus {
+    border-color: var(--accent-color);
     box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
     box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222;
+    color: #373737;
     outline: none;
 }
 .select-css option {

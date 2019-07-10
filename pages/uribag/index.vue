@@ -1,25 +1,23 @@
 <template>
-  <section id="uribag-page">
+  <section id="product-page">
+    <img class="product-img" :src="story.content.product_img">
+    <div class="price">
+      <span>CHF {{ story.content.price }}.-</span>
+    </div>
     <h1>{{ story.content.title }}</h1>
-    <!-- <img class="hero-img" :src="story.content.heroimg"> -->
-    <Hero :hero="story.content.product_img" />
     <div v-html="content" id="content"></div>
     <div id="buy">
-      <div class="input-group email">
-        <label for="email">E-Mail</label>
-        <input type="text" name="email" v-model="email" placeholder="Deine E-Mail-Adresse">
-      </div>
-      <div class="input-group quantity">
-        <label for="quantity">Anzahl</label>
-        <input type="number" name="quantity" v-model.number="quantity">
-      </div>
       <label for="gender">Type</label>
       <select class="gender-select select-css" name="gender" v-model="sku" required>
         <option value="" hidden>Wähle den Typ aus</option>
         <option value="sku_FO3WFIwI2mX9II">Penis</option>
         <option value="sku_FPCLMvzZi0Dgah">Vagina</option>
       </select>
-      <button id="checkout-button" @click="checkoutButton(sku, quantity, email)" role="link">{{ buttontext }}</button>
+      <div class="input-group quantity">
+        <label for="quantity">Anzahl</label>
+        <input type="number" name="quantity" v-model.number="quantity">
+      </div>
+      <button id="checkout-button" @click="checkoutButton(sku, quantity)" role="link">{{ buttontext }}</button>
       <div class="explainer">
         <small>Wenn du auf den Button <b>Jetzt kaufen</b> klickst wirst du zu Stripe weitergeleitet, unserem Partner für die Zahlungsabwicklung. Nachdem du den Kauf abgeschlossen hast, wirst du wieder zurück auf unsere Seite geleitet.</small>
       </div>
@@ -47,7 +45,6 @@ export default {
       sku: '',
       buttontext: 'Jetzt kaufen',
       quantity: 1,
-      email: '',
       feedback: ''
     }
   },
@@ -87,13 +84,12 @@ export default {
     })
   },
   methods: {
-    checkoutButton(sku, quantity, email) {
+    checkoutButton(sku, quantity) {
       Stripe('pk_test_9xgl62xyDo2kfocmZxwe2Nur00lJFWZfOr').redirectToCheckout({
         // TODO: Make possible to add several items dynamically to the checkout
         items: [{sku: sku, quantity: quantity}],
         successUrl: 'https://northway.blog/success',
         cancelUrl: 'https://northway.blog/canceled',
-        customerEmail: email,
         billingAddressCollection: 'required',
       }).then((result) => {
         this.feedback = result.error.message
@@ -106,17 +102,46 @@ export default {
 </script>
 
 <style>
-#content,
-#buy {
+/* #content,
+#buy,
+#product-page h1,
+.price {
+  padding: 0 30px;
+  max-width: 55rem;
+  margin: 0 auto;
+} */
+#product-page {
   padding: 0 30px;
   max-width: 55rem;
   margin: 0 auto;
 }
-
-#uribag-page p {
+#buy {
+  max-width: 20rem;
+}
+#product-page p {
   white-space: pre-line;
 }
 
+#product-page h1,
+#product-page h2,
+#product-page h3 {
+  text-align: left;
+}
+#product-page h1 {
+  font-size: 26px;
+  font-size: calc((.01017*100vw + 21.72881px)*var(--scale-font));
+}
+#product-page h2 {
+  font-size: 18px;
+  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
+}
+#product-page h3 {
+  font-size: 16px;
+  font-size: calc((.00339*100vw + 14.57627px)*var(--scale-font));
+}
+#product-page #content {
+  padding: 0;
+}
 .hero-img {
   width: 100%;
 }
@@ -129,5 +154,12 @@ export default {
 #checkout-button:hover {
   background-color: #fff;
   color: var(--accent-color);
+}
+.price {
+  /* TODO: implement correct scalable font values */
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 2rem 0 1rem;
 }
 </style>
