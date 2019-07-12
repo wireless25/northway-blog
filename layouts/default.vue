@@ -1,5 +1,5 @@
-<template lang="md">
-  <div>
+<template>
+  <div id="layout">
     <TheHeader />
     <main class="main-content">
       <nuxt />
@@ -69,6 +69,10 @@ body {
   margin: 0;
   line-height: 1.7;
   font-weight: 300;
+}
+
+#layout {
+  position: relative;
 }
 
 h1::selection,

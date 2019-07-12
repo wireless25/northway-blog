@@ -94,7 +94,7 @@ export default {
   },
   methods: {
     checkoutButton(sku, quantity) {
-      let stripeKey = process.env.NODE_ENV == 'production' ? 'pk_live_zfrzmno0ieuilND2W33LimAo00gqB08lsv' : 'pk_test_9xgl62xyDo2kfocmZxwe2Nur00lJFWZfOr'
+      let stripeKey = process.env.NODE_ENV == 'production' ? 'pk_test_9xgl62xyDo2kfocmZxwe2Nur00lJFWZfOr' : 'pk_test_9xgl62xyDo2kfocmZxwe2Nur00lJFWZfOr'
 
       Stripe(stripeKey).redirectToCheckout({
         // TODO: Make possible to add several items dynamically to the checkout
