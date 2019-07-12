@@ -107,7 +107,7 @@ img {
 }
 
 .main-content {
-  margin: 4.5rem auto;
+  margin: 4.5rem auto 0;
   padding-top: .1rem;
   overflow: auto;
 }
@@ -125,7 +125,7 @@ h1 {
 }
 
 h2 {
-  margin: 4rem 0 2rem;
+  margin: 2.5rem 0 1rem;
   font-size: 26px;
   font-size: calc((.01017*100vw + 21.72881px)*var(--scale-font));
 }

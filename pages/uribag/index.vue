@@ -1,28 +1,33 @@
 <template>
   <section id="product-page">
     <img class="product-img" :src="story.content.product_img">
-    <div class="price">
-      <span>CHF {{ story.content.price }}.-</span>
+    <div class="price-holder">
+      <span class="price">CHF {{ story.content.price }}.-</span><span class="explainer"><small>inkl. Porto und Verpackung</small></span>
     </div>
     <h1>{{ story.content.title }}</h1>
-    <div v-html="content" id="content"></div>
+    <div v-html="teaserText" class="teaser-text"></div>
     <div id="buy">
-      <label for="gender">Type</label>
-      <select class="gender-select select-css" name="gender" v-model="sku" required>
-        <option value="" hidden>Wähle den Typ aus</option>
-        <option value="sku_FO3WFIwI2mX9II">Penis</option>
-        <option value="sku_FPCLMvzZi0Dgah">Vagina</option>
-      </select>
-      <div class="input-group quantity">
-        <label for="quantity">Anzahl</label>
-        <input type="number" name="quantity" v-model.number="quantity">
+      <div class="checkout-input-group">
+        <div class="input-group gender">
+          <label for="gender">Typ</label>
+          <select class="gender-select select-css" name="gender" v-model="sku" required>
+            <option value="" hidden>Wähle den Typ aus</option>
+            <option value="sku_FO3WFIwI2mX9II">Penis</option>
+            <option value="sku_FPCLMvzZi0Dgah">Vagina</option>
+          </select>
+        </div>
+        <div class="input-group quantity">
+          <label for="quantity">Anzahl</label>
+          <input type="number" name="quantity" v-model.number="quantity">
+        </div>
       </div>
       <button id="checkout-button" @click="checkoutButton(sku, quantity)" role="link">{{ buttontext }}</button>
-      <div class="explainer">
+      <!-- <div class="explainer">
         <small>Wenn du auf den Button <b>Jetzt kaufen</b> klickst wirst du zu Stripe weitergeleitet, unserem Partner für die Zahlungsabwicklung. Nachdem du den Kauf abgeschlossen hast, wirst du wieder zurück auf unsere Seite geleitet.</small>
-      </div>
+      </div> -->
       <div id="error-message">{{ feedback }}</div>
     </div>
+    <div v-html="content" id="content"></div>
   </section>
 </template>
 
@@ -39,7 +44,8 @@ export default {
     return {
       story: {
         content: {
-          content: ''
+          content: '',
+          teaser_text: ''
         }
       },
       sku: '',
@@ -70,6 +76,9 @@ export default {
   computed: {
     content () {
       return marked(this.story.content.content)
+    },
+    teaserText () {
+      return marked(this.story.content.teaser_text)
     }
   },
   mixins: [storyblokLivePreview],
@@ -104,21 +113,17 @@ export default {
 </script>
 
 <style>
-/* #content,
+#content,
 #buy,
 #product-page h1,
-.price {
-  padding: 0 30px;
-  max-width: 55rem;
-  margin: 0 auto;
-} */
-#product-page {
-  padding: 0 30px;
+.price,
+.teaser-text {
+  padding: 0 30px 0;
   max-width: 55rem;
   margin: 0 auto;
 }
 #buy {
-  max-width: 20rem;
+  max-width: 30rem;
 }
 #product-page p {
   white-space: pre-line;
@@ -141,9 +146,6 @@ export default {
   font-size: 16px;
   font-size: calc((.00339*100vw + 14.57627px)*var(--scale-font));
 }
-#product-page #content {
-  padding: 0;
-}
 .hero-img {
   width: 100%;
 }
@@ -151,17 +153,34 @@ export default {
   color: #fff;
   background-color: var(--accent-color);
   cursor: pointer;
-  margin: 1.5rem 0 .75rem 0;
+  margin: 0 0 .75rem 0;
 }
 #checkout-button:hover {
   background-color: #fff;
   color: var(--accent-color);
 }
+.price-holder {
+  margin: 1rem 0;
+}
 .price {
   /* TODO: implement correct scalable font values */
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 36px;
   color: var(--accent-color);
-  margin: 2rem 0 1rem;
+  padding-right: .5rem;
+  font-weight: 300;
+}
+.checkout-input-group {
+  display: flex;
+  justify-content: space-between;
+}
+.input-group.gender {
+  flex-grow: 2;
+  margin-right: 1rem;
+}
+.input-group.quantity {
+  width: 25%;
+}
+.explainer {
+  line-height: 1;
 }
 </style>
