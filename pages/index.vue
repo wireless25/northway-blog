@@ -1,6 +1,6 @@
 <template>
   <section id="posts">
-    <nav>
+    <!-- <nav>
       <ul id="tags-nav">
         <li class="tag" v-for="tag in tags"><a>{{ tag.name }}</a></li>
       </ul>
@@ -8,7 +8,7 @@
     <div class="search-input">
       <input id="search" type="text" class="" v-model="search">
       <label for="search">Search</label>
-    </div>
+    </div> -->
     <PostPreview
       v-for="post in filteredPosts"
       :key="post.content.slug"

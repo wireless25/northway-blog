@@ -99,8 +99,8 @@ export default {
       Stripe(stripeKey).redirectToCheckout({
         // TODO: Make possible to add several items dynamically to the checkout
         items: [{sku: sku, quantity: quantity}],
-        successUrl: 'https://northway.blog/success',
-        cancelUrl: 'https://northway.blog/canceled',
+        successUrl: 'https://northway.blog/uribag/success',
+        cancelUrl: 'https://northway.blog/uribag/canceled',
         billingAddressCollection: 'required',
       }).then((result) => {
         this.feedback = result.error.message
