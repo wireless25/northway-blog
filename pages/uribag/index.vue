@@ -12,8 +12,8 @@
           <label for="gender">Typ</label>
           <select class="gender-select select-css" name="gender" v-model="sku" required>
             <option value="" hidden>Wähle den Typ aus</option>
-            <option value="sku_FO3WFIwI2mX9II">Penis</option>
-            <option value="sku_FPCLMvzZi0Dgah">Vagina</option>
+            <option value="sku_FMyH8KcQkcrXY5">Penis</option>
+            <option value="sku_FPlZ6GTRZvIy7r">Vagina</option>
           </select>
         </div>
         <div class="input-group quantity">
