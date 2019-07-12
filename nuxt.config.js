@@ -77,6 +77,7 @@ generate: {
       '/',
       '/blog',
       '/about',
+      '/uribag',
       ...blogPosts
     ]
   })
