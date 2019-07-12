@@ -17,7 +17,13 @@ export default {
     Hero
   },
   data () {
-    return { story: { content: { content: '' } } }
+    return {
+      story: {
+        content: {
+          content: ''
+        }
+      }
+    }
   },
   head () {
     return {

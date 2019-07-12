@@ -5,8 +5,12 @@
         <li class="tag" v-for="tag in tags"><a>{{ tag.name }}</a></li>
       </ul>
     </nav>
+    <div class="search-input">
+      <input id="search" type="text" class="" v-model="search">
+      <label for="search">Search</label>
+    </div>
     <PostPreview
-      v-for="post in posts"
+      v-for="post in filteredPosts"
       :key="post.content.slug"
       :excerpt="post.content.summary"
       :thumbnailImage="post.content.thumbnail"
@@ -25,7 +29,7 @@ export default {
   },
   data () {
     return {
-
+      search: ''
     }
   },
   async asyncData (context) {
@@ -47,6 +51,13 @@ export default {
       posts: posts.data.stories, tags: tags.data.tags
     }
 
+  },
+  computed: {
+    filteredPosts() {
+      return this.posts.filter((post) => {
+        return post.content.title.match(this.search)
+      })
+    }
   }
 }
 </script>
