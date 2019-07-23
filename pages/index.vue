@@ -2,8 +2,8 @@
   <section id="posts">
     <nav>
       <ul id="tags-nav">
-        <li class="tag" @click="filterPosts('')">All</li>
-        <li class="tag" v-for="tag in tags" @click="filterPosts(tag.name)"><a>{{ tag.name }}</a></li>
+        <li class="tag" @click="filterPosts('')" :class="{active: this.allIsActive }"><a>All</a></li>
+        <li class="tag" v-for="tag in tags" @click="filterPosts(tag.name)" :class="{active: tag.name == selected}"><a>{{ tag.name }}</a></li>
       </ul>
     </nav>
     <div class="search-input">
@@ -31,7 +31,9 @@ export default {
   data () {
     return {
       search: '',
-      tag: ''
+      tag: '',
+      selected: '',
+      allIsActive: true,
     }
   },
   async asyncData (context) {
@@ -57,16 +59,32 @@ export default {
   computed: {
     filteredPosts() {
       return this.posts.filter((post) => {
-        for (var n = 0; n < post.tag_list.length; n++) {
-          return post.tag_list[n].match(this.tag)
-          // TODO: make sure that posts with several tags are displayed correctly
+        if (this.search) {
+          this.tag = ''
+          this.selected = ''
+          this.allIsActive = true
+          return post.content.title.toLowerCase().match(this.search.toLowerCase())
+        } else {
+          for (var n = 0; n < post.tag_list.length; n++) {
+            return post.tag_list[n].match(this.tag)
+            // TODO: make sure that posts with several tags are displayed correctly
+          }
         }
       })
     }
   },
   methods: {
     filterPosts(tag) {
-      this.tag = tag
+      this.search = ''
+      if (tag === '') {
+        this.allIsActive = true
+        this.tag = tag
+        this.selected = ''
+      } else {
+        this.allIsActive = false
+        this.tag = tag
+        this.selected = tag
+      }
     }
   }
 }
@@ -77,7 +95,6 @@ export default {
   padding: 2rem 30px;
   max-width: 70rem;
   margin: 0 auto;
-  display: inline-block;
 }
 
 .no-posts {
@@ -105,7 +122,8 @@ export default {
   transition: all 100ms ease-in;
 }
 
-.tag:hover {
+.tag:hover,
+.tag.active {
   background-color: var(--accent-color);
   transition: all 100ms ease-in;
   color: #fff;
