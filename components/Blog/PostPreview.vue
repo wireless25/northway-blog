@@ -10,7 +10,7 @@
       <!-- <img :src="thumbnailImage" class="post-preview-thumbnail"> -->
       <div class="post-preview-content">
         <h2>{{ title }}</h2>
-        <!-- <span class="preview-tags" v-for="tag in tags">{{ tag }}</span> -->
+        <span class="preview-tags" v-for="tag in tags">{{ tag }}</span>
         <p>{{ excerpt }}</p>
       </div>
     </article>
@@ -35,10 +35,10 @@ export default {
     id: {
       type: String,
       required: true
+    },
+    tags: {
+      type: Array
     }
-    // tags: {
-    //   type: Array
-    // }
   }
 }
 </script>

@@ -1,14 +1,15 @@
 <template>
   <section id="posts">
-    <!-- <nav>
+    <nav>
       <ul id="tags-nav">
-        <li class="tag" v-for="tag in tags"><a>{{ tag.name }}</a></li>
+        <li class="tag" @click="filterPosts('')">All</li>
+        <li class="tag" v-for="tag in tags" @click="filterPosts(tag.name)"><a>{{ tag.name }}</a></li>
       </ul>
     </nav>
     <div class="search-input">
       <input id="search" type="text" class="" v-model="search">
       <label for="search">Search</label>
-    </div> -->
+    </div>
     <PostPreview
       v-for="post in filteredPosts"
       :key="post.content.slug"
@@ -29,7 +30,8 @@ export default {
   },
   data () {
     return {
-      search: ''
+      search: '',
+      tag: ''
     }
   },
   async asyncData (context) {
@@ -55,8 +57,16 @@ export default {
   computed: {
     filteredPosts() {
       return this.posts.filter((post) => {
-        return post.content.title.match(this.search)
+        for (var n = 0; n < post.tag_list.length; n++) {
+          return post.tag_list[n].match(this.tag)
+          // TODO: make sure that posts with several tags are displayed correctly
+        }
       })
+    }
+  },
+  methods: {
+    filterPosts(tag) {
+      this.tag = tag
     }
   }
 }
@@ -91,5 +101,13 @@ export default {
   border-radius: 25px;
   font-weight: 700;
   font-size: 12px;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.tag:hover {
+  background-color: var(--accent-color);
+  transition: all 100ms ease-in;
+  color: #fff;
 }
 </style>
