@@ -18,6 +18,7 @@
       :id="post.slug"
       :title="post.content.title"
       :tags="post.tag_list" />
+      <button type="button" @click="showArray()" name="button"></button>
   </section>
 </template>
 
@@ -85,7 +86,7 @@ export default {
         this.tag = tag
         this.selected = tag
       }
-    }
+    },
   }
 }
 </script>

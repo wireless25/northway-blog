@@ -20,8 +20,10 @@ export default {
       { hid: 'keywords', name: 'keywords', content: "Vanlife,VWT4,Solar,Traveling,Campervan" }
     ],
     script: [
-
+      { innerHTML: '(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-4579674376395488", enable_page_level_ads: true});' },
+      { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', async: true }
     ],
+    __dangerouslyDisableSanitizers: ['script'],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:300,400|PT+Serif:700' }
