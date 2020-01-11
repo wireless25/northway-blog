@@ -1,6 +1,6 @@
 <template>
   <section id="posts">
-    <nav>
+    <!-- <nav>
       <ul id="tags-nav">
         <li class="tag" @click="filterPosts('')" :class="{active: this.allIsActive }"><a>All</a></li>
         <li class="tag" v-for="tag in tags" @click="filterPosts(tag.name)" :class="{active: tag.name == selected}"><a>{{ tag.name }}</a></li>
@@ -9,7 +9,7 @@
     <div class="search-input">
       <input id="search" type="text" class="" v-model="search">
       <label for="search">Search</label>
-    </div>
+    </div> -->
     <PostPreview
       v-for="post in filteredPosts"
       :key="post.content.slug"
@@ -18,7 +18,6 @@
       :id="post.slug"
       :title="post.content.title"
       :tags="post.tag_list" />
-      <button type="button" @click="showArray()" name="button"></button>
   </section>
 </template>
 
