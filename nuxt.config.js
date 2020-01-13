@@ -59,7 +59,6 @@ export default {
       id: 'UA-140504196-1'
     }]
   ],
-
   generate: {
     routes: function() {
       return axios.get(
