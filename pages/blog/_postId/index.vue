@@ -24,6 +24,33 @@ export default {
   components: {
     Hero
   },
+  head () {
+    return {
+      title: `Northway | ${this.story.content.title}`,
+      meta: [
+        {
+        hid: `description`,
+        property: 'description',
+        content: this.story.content.summary
+        },
+        {
+          hid: `og:image`,
+          property: "og:image",
+          content: this.story.content.thumbnail
+        },
+        {
+          hid: `og:title`,
+          property: "og:title",
+          content: this.story.content.title
+        },
+        {
+          hid: `og:url`,
+          property: "og:url",
+          content: `https://northway.blog${this.$nuxt.$route.path}`
+        }
+      ]
+    }
+  },
   data () {
     return { story: { content: { content: '' } } }
   },
