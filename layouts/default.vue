@@ -48,10 +48,6 @@ export default {
     --scale-element:0.85;
     --scale-font:0.85}
 }
-/* body,html {
-  min-height: 100vh;
-  background: #fff
-} */
 
 html {
   -webkit-overflow-scrolling: touch;
@@ -105,9 +101,9 @@ span::-moz-selection,
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto
+  display: block;
+  max-width: 100%;
+  height: auto
 }
 
 .main-content {
@@ -118,7 +114,6 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Serif', serif;
-  text-align: center;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -126,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 42px;
   font-size: calc((.02881*100vw + 29.89831px)*var(--scale-font));
+  text-align: center;
 }
 
 h2 {
