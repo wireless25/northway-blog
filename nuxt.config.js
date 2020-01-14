@@ -14,7 +14,12 @@ export default {
       { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: "Traveling northway with a VW T4 California from 1993" },
       { hid: 'keywords', name: 'keywords', content: "Vanlife,VWT4,Solar,Traveling,Campervan" },
-      { hid: 'robots', name: 'robots', content: 'index'}
+      { hid: 'robots', name: 'robots', content: 'index'},
+      {
+        hid: "google-site-verification",
+        name: "google-site-verification",
+        content: "tA9P0mUugmVdqJADOKFNVwIu-ZGH4btNQaJEYldLMyY"
+      }
     ],
     script: [
       { innerHTML: '(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-4579674376395488", enable_page_level_ads: true});' },
