@@ -7,7 +7,7 @@
       <!-- <div class="tags-container">
         <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
       </div> -->
-      <Hero :hero="story.content.thumbnail" />
+      <Hero :hero="story.content.thumbnail" :alt="story.content.alt" />
       <p class="intro">{{ story.content.summary }}</p>
       <div class="blog-body" v-html="content">
       </div>
@@ -29,9 +29,14 @@ export default {
       title: `Northway | ${this.story.content.title}`,
       meta: [
         {
-        hid: `description`,
-        property: 'description',
-        content: this.story.content.summary
+          hid: `description`,
+          name: 'description',
+          content: this.story.content.summary
+        },
+        { 
+          hid: 'keywords', 
+          name: 'keywords', 
+          content: this.story.content.keywords
         },
         {
           hid: `og:image`,
@@ -99,7 +104,7 @@ export default {
 span.blog-date {
   font-size: 18px;
   font-size: calc((.00339*100vw + 16.57627px)*var(--scale-font));
-  color: #AAAAAA;
+  color: #737373;
   text-align: center;
   margin: 0 auto 2rem;
   display: block;

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <img :src="hero">
+    <img :src="hero" :alt="alt">
     <!-- <div class="hero-container">
       <div
         :style="{ backgroundImage: 'url(' + hero + ')' }"
@@ -14,6 +14,10 @@
 export default {
   props: {
     hero: {
+      type: String,
+      required: true
+    },
+    alt: {
       type: String,
       required: true
     }
