@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.2",
-    "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/markdownit": "^1.2.7",
     "cross-env": "^6.0.3",
     "marked": "^0.8.0",
@@ -24,24 +23,25 @@
     "vue-moment": "^4.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2",
     "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/google-analytics": "^2.2.3",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-config-standard": ">=14.1.0",
+    "eslint-loader": "^3.0.3",
     "eslint-plugin-import": ">=2.19.1",
     "eslint-plugin-jest": ">=23.4.0",
     "eslint-plugin-node": ">=11.0.0",
     "eslint-plugin-nuxt": ">=0.5.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": ">=4.2.1",
     "eslint-plugin-standard": ">=4.0.1",
-    "eslint-loader": "^3.0.3",
     "eslint-plugin-vue": "^6.1.2",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1"
   },
-  "engines": { 
-    "node": "12.x" 
+  "engines": {
+    "node": "12.x"
   }
 }

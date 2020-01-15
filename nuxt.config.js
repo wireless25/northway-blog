@@ -61,6 +61,8 @@ export default {
       }
     ],
     '@nuxtjs/markdownit',
+  ],
+  buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-140504196-1'
     }]
