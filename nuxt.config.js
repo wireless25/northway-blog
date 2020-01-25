@@ -22,13 +22,10 @@ export default {
       }
     ],
     script: [
-      { innerHTML: '(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-4579674376395488", enable_page_level_ads: true});' },
-      { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', async: true }
     ],
-    __dangerouslyDisableSanitizers: ['script'],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:300,400|PT+Serif:700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:300,400|PT+Serif:400,700' }
     ]
   },
   /*
@@ -50,22 +47,90 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    [
-      'storyblok-nuxt',
-      {
-        accessToken:
-          process.env.NODE_ENV == 'production'
-            ? 'hVOMD3fXYrzAZGWVbVKVjgtt'
-            : 'OFfXWKmTJP9cC2h8BrQT0gtt',
-        cacheProvider: 'memory'
+    ['storyblok-nuxt', {
+      accessToken:
+        process.env.NODE_ENV == 'production'
+          ? 'hVOMD3fXYrzAZGWVbVKVjgtt'
+          : 'OFfXWKmTJP9cC2h8BrQT0gtt',
+      cacheProvider: 'memory'
       }
     ],
     '@nuxtjs/markdownit',
-  ],
-  buildModules: [
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-140504196-1'
+    ['nuxt-cookie-control', {
+      barPosition: 'bottom-full',
+      colors: {
+        barTextColor: '#fff',
+        modalOverlay: '#000',
+        barBackground: '#234E52',
+        barButtonColor: '#234E52',
+        modalTextColor: '#000',
+        modalBackground: '#fff',
+        modalOverlayOpacity: 0.8,
+        modalButtonColor: '#fff',
+        modalUnsavedColor: '#fff',
+        barButtonHoverColor: '#fff',
+        barButtonBackground: '#fff',
+        modalButtonHoverColor: '#fff',
+        modalButtonBackground: '#234E52',
+        controlButtonIconColor: '#234E52',
+        controlButtonBackground: '#fff',
+        barButtonHoverBackground: '#333',
+        modalButtonHoverBackground: '#319795',
+        controlButtonIconHoverColor: '#fff',
+        controlButtonHoverBackground: '#000',
+        checkboxActiveCircleBackground: '#285E61',
+        checkboxActiveBackground: '#CBD5E0',
+        checkboxInactiveCircleBackground: '#E2E8F0',
+        checkboxInactiveBackground: '#CBD5E0',
+        checkboxDisabledCircleBackground: '#fff',
+        checkboxDisabledBackground: '#E2E8F0',
+      },
     }]
+  ],
+  cookies: {
+    necessary: [
+      {
+        name:  'Default Cookies',
+        description:  'Used for cookie control.',
+        cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
+      }
+    ],
+    optional: [
+      {
+        name:  'Google Analitycs',
+        description:  'Google Analytics helps us to improve the content on our page.',
+        src:  'https://www.googletagmanager.com/gtag/js?id=UA-140504196-1',
+        async:  true,
+        cookies: ['_ga', '_gat', '_gid'],
+        accepted: () =>{
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-140504196-1', { 'anonymize_ip': true });
+        },
+        declined: () =>{
+          document.cookie = '_ga' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+          document.cookie = '_gid' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+          document.cookie = '_gat_gtag_UA_140504196_1' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+      },
+      {
+        name:  'Google AdSense',
+        description:  'Google Adsense helps us show you relevant content for you.',
+        src:  'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+        async:  true,
+        cookies: ['IDE'],
+        accepted: () =>{
+          (adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-4579674376395488", enable_page_level_ads: true});
+        },
+        declined: () =>{
+          document.cookie = 'IDE' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+      },
+    ]
+  },
+  buildModules: [
+    ['@nuxtjs/tailwindcss']
   ],
   generate: {
     routes: function() {
