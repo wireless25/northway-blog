@@ -1,7 +1,6 @@
 <template>
   <section id="about-page">
     <h1>{{ story.content.title }}</h1>
-    <!-- <img class="hero-img" :src="story.content.heroimg"> -->
     <Hero :hero="story.content.heroimg" />
     <div v-html="content" id="content"></div>
   </section>
@@ -53,19 +52,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#content {
-  padding: 0 30px;
-  max-width: 55rem;
-  margin: 0 auto;
-}
-
-#about-page p {
-  white-space: pre-line;
-}
-
-.hero-img {
-  width: 100%;
-}
-</style>

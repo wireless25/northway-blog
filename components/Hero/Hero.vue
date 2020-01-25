@@ -1,12 +1,9 @@
 <template>
   <section>
-    <img :src="hero" :alt="alt">
-    <!-- <div class="hero-container">
-      <div
-        :style="{ backgroundImage: 'url(' + hero + ')' }"
-        class="img"
-      ></div>
-    </div> -->
+    <figure>
+      <img :src="hero | transformImage('1400x787')" :alt="alt" class="max-w-7xl w-full mx-auto mt-20 px-4">
+      <figcaption class="text-sm text-gray-600 text-center font-normal max-w-4xl mx-auto mt-4 mb-4 pb-4 px-4 border-b border-gray-300">{{ alt }}</figcaption>
+    </figure>
   </section>
 </template>
 
@@ -19,29 +16,8 @@ export default {
     },
     alt: {
       type: String,
-      required: true
+      required: false
     }
   }
 }
 </script>
-
-<style scoped>
-img {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-/* .img {
-  padding-top: 56.25%;
-  max-height: 700px;
-  background-size: cover;
-  -moz-background-size: cover;
-  background-position: center;
-}
-
-.hero-container {
-  padding: 0 30px;
-} */
-</style>

@@ -1,16 +1,12 @@
 <template>
   <div id="post">
     <section class="post-content">
-      <h1>{{ story.content.title }}</h1>
-      <hr class="divider">
-      <span class="blog-date">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
-      <!-- <div class="tags-container">
-        <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
-      </div> -->
+      <h1 class="text-6xl text-center max-w-5xl mx-auto">{{ story.content.title }}</h1>
+      <span class="font-serif text-xl text-gray-500 text-center mt-10 mx-auto block font-normal">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
       <Hero :hero="story.content.thumbnail" :alt="story.content.alt" />
-      <p class="intro">{{ story.content.summary }}</p>
-      <div class="blog-body" v-html="content">
-      </div>
+      <p class="font-serif text-2xl font-normal max-w-4xl mx-auto mt-16 px-4 intro">{{ story.content.summary }}</p>
+      <hr class="h-1 w-24 bg-green-700 mx-auto mt-10">
+      <Content :content="content" />
     </section>
   </div>
 </template>
@@ -19,10 +15,12 @@
 import marked from 'marked'
 import storyblokLivePreview from '@/mixins/storyblokLivePreview'
 import Hero from '@/components/Hero/Hero'
+import Content from '@/components/Content/Content'
 
 export default {
   components: {
-    Hero
+    Hero,
+    Content
   },
   head () {
     return {
@@ -77,70 +75,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#post h1 {
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-  padding: 0 30px;
-}
-#post img {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.divider {
-  width: 5rem;
-  background: var(--accent-color);
-  height: .25rem;
-  margin-bottom: 2rem;
-  border: none;
-}
-
-span.blog-date {
-  font-size: 18px;
-  font-size: calc((.00339*100vw + 16.57627px)*var(--scale-font));
-  color: #737373;
-  text-align: center;
-  margin: 0 auto 2rem;
-  display: block;
-}
-
-.blog-body,
-.intro {
-  max-width: 55rem;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.intro {
-  font-weight: 400;
-  font-size: 18px;
-  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
-  line-height: 1.3;
-  margin: 2rem auto;
-}
-
-@media (min-width: 40rem) {
-  .intro {
-    margin: 3.5rem auto;
-  }
-}
-
-/* .tags {
-  padding: .4rem 1rem;
-  margin: 0 .8rem 0 0;
-  background: #799695;
-  color: #fff;
-}
-
-.tags-container {
-  padding: 2rem 30px;
-  margin: 2rem auto;
-  width: fit-content;
-} */
-</style>

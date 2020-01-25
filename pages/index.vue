@@ -1,24 +1,20 @@
 <template>
-  <section id="posts">
-    <!-- <nav>
-      <ul id="tags-nav">
-        <li class="tag" @click="filterPosts('')" :class="{active: this.allIsActive }"><a>All</a></li>
-        <li class="tag" v-for="tag in tags" @click="filterPosts(tag.name)" :class="{active: tag.name == selected}"><a>{{ tag.name }}</a></li>
-      </ul>
-    </nav>
-    <div class="search-input">
-      <input id="search" type="text" class="" v-model="search">
-      <label for="search">Search</label>
-    </div> -->
-    <PostPreview
-      v-for="post in filteredPosts"
-      :key="post.content.slug"
-      :excerpt="post.content.summary"
-      :thumbnailImage="post.content.thumbnail"
-      :id="post.slug"
-      :title="post.content.title"
-      :tags="post.tag_list" />
-  </section>
+  <div class="max-w-full px-4 mx-auto">
+    <section>
+      <h1 class="text-center">Northway Blog</h1>
+      <p class="text-lg md:text-xl lg:text-2xl text-center mx-auto mt-6 sm:w-3/4 md:w-1/2">Welcome to the Northway blog. Here wou will find travel and camping related content always up to date.</p>
+    </section>
+    <section id="posts" class="flex flex-wrap mt-4 max-w-8xl mx-auto">
+      <PostPreview
+        v-for="post in filteredPosts"
+        :key="post.content.slug"
+        :excerpt="post.content.summary"
+        :thumbnailImage="post.content.thumbnail"
+        :id="post.slug"
+        :title="post.content.title"
+        :alt="post.content.alt" />
+    </section>
+  </div>
 </template>
 
 <script>
@@ -89,43 +85,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-#posts {
-  padding: 2rem 30px;
-  max-width: 70rem;
-  margin: 0 auto;
-}
-
-.no-posts {
-  margin: 0 auto;
-  max-width: 60rem;
-  padding: 0 30px;
-  height: calc(100vh - 300px);
-  text-align: center;
-}
-#tags-nav {
-  list-style: none;
-  overflow: hidden;
-  width: fit-content;
-  margin: 1.5rem auto;
-}
-.tag {
-  float: left;
-  margin: 0 20px;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  font-weight: 700;
-  font-size: 12px;
-  cursor: pointer;
-  transition: all 100ms ease-in;
-}
-
-.tag:hover,
-.tag.active {
-  background-color: var(--accent-color);
-  transition: all 100ms ease-in;
-  color: #fff;
-}
-</style>

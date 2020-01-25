@@ -1,7 +1,7 @@
 <template>
-  <header class="main-header">
+  <header class="main-header z-50">
     <nav class="main-nav">
-      <a href="/" id="logo">N</a>
+      <a href="/" id="logo" class="hover:bg-green-700 hover:text-white text-gray-800">N</a>
       <ul class="nav-links">
         <nuxt-link to="/" tag="li" class="nav-link"><a>All Posts</a></nuxt-link>
         <nuxt-link to="/about" tag="li" class="nav-link"><a>About</a></nuxt-link>
@@ -50,7 +50,7 @@ export default {}
 }
 
 .nav-link.nuxt-link-exact-active {
-  border-bottom: 3px solid var(--accent-color);
+  @apply border-b-2 border-green-700;
 }
 
 .nav-link a {
@@ -83,7 +83,6 @@ export default {}
   font-family: 'PT Serif', serif;
   font-weight: 700;
   text-decoration: none;
-  color: #373737;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
@@ -91,9 +90,7 @@ export default {}
 }
 
 #logo:hover {
-  background: var(--accent-color);
   transition: background .3s ease;
-  color: #fff;
 }
 
 </style>
