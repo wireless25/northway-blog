@@ -4,7 +4,7 @@
       <h1 class="text-center">Northway Blog</h1>
       <p class="text-lg md:text-xl lg:text-2xl text-center mx-auto mt-6 sm:w-3/4 md:w-1/2">Welcome to the Northway blog. Here wou will find travel and camping related content always up to date.</p>
     </section>
-    <section id="posts" class="flex flex-wrap mt-4 max-w-8xl mx-auto">
+    <section id="posts" class="flex flex-wrap max-w-8xl mx-auto">
       <PostPreview
         v-for="post in filteredPosts"
         :key="post.content.slug"

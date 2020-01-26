@@ -1,9 +1,11 @@
 <template>
-  <nuxt-link :to="'/blog/' + id" class="md:w-1/2 lg:w-1/3 px-2 lg:px-8 mt-16">
+  <nuxt-link :to="'/blog/' + id" class="md:w-1/2 lg:w-1/3 md:px-2 lg:px-8 mt-8 md:mt-16 teaser">
     <article>
-      <img :src="thumbnailImage | transformImage('800x900')" :alt="alt" class="w-full">
+      <div class="overflow-hidden">
+        <img :src="thumbnailImage | transformImage('800x900')" :alt="alt" class="w-full">
+      </div>
       <div class="w-5/6 -mt-16 pt-2 pr-8 bg-white z-10 relative">
-        <h2 class="text-2xl leading-tight mt-4">{{ title }}</h2>
+        <h2 class="text-xl md:text-2xl leading-tight mt-2 md:mt-4">{{ title }}</h2>
         <p class="text-base mt-2">{{ excerpt }}</p>
       </div>
     </article>
@@ -36,3 +38,13 @@ export default {
   }
 }
 </script>
+
+<style>
+img {
+  transition: all .4s ease-in-out;
+}
+.teaser:hover article img {
+  transform: scale(1.05);
+  transition: all .4s ease-in-out;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <header class="main-header z-50">
+  <header class="main-header z-50 shadow-md">
     <nav class="main-nav">
       <a href="/" id="logo" class="hover:bg-green-700 hover:text-white text-gray-800">N</a>
       <ul class="nav-links">
@@ -21,7 +21,6 @@ export default {}
   left: 0;
   width: 100%;
   background: #fff;
-  box-shadow: 0px -7px 7px 2px #373737;
   height: 4.5rem;
 }
 

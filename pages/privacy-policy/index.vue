@@ -1,6 +1,6 @@
 <template>
   <section id="privacy-policy-page">
-    <h1 class="max-w-4xl mx-auto px-4">{{ story.content.title }}</h1>
+    <h1 class="max-w-4xl mx-auto">{{ story.content.title }}</h1>
     <Hero v-if="story.content.heroimg" :hero="story.content.heroimg" />
     <Content :content="content" />
   </section>
