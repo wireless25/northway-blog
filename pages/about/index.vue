@@ -3,7 +3,9 @@
     <h1 class="text-center max-w-5xl mx-auto">{{ story.content.title }}</h1>
     <Hero :hero="story.content.heroimg" :alt="story.content.alt" />
     <Content :content="content" />
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/Ewj7z42AX"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy us a coffee"><span style="margin-left:5px">Buy us a coffee</span></a>
+    <div class="max-w-4xl mx-auto mt-6 md:mt-16 px-4">
+      <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/Ewj7z42AX"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy us a coffee"><span style="margin-left:5px">Buy us a coffee</span></a>
+    </div>
   </section>
 </template>
 
