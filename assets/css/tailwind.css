@@ -151,3 +151,11 @@ a::-moz-selection,
 figcaption::-moz-selection {
   @apply bg-green-700 text-white;
 }
+
+blockquote {
+  @apply m-0;
+}
+
+blockquote p {
+  @apply text-xl font-serif text-left font-bold leading-normal;
+}
