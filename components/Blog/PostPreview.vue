@@ -1,17 +1,12 @@
 <template>
-  <nuxt-link :to="'/blog/' + id" class="post-preview">
+  <nuxt-link :to="'/blog/' + id" class="md:w-1/2 lg:w-1/3 md:px-2 lg:px-8 mt-8 md:mt-16 teaser">
     <article>
-      <div class="post-preview-thumbnail">
-        <div
-          :style="{ backgroundImage: 'url(' + thumbnailImage + ')' }"
-          class="post-preview-image"
-        ></div>
+      <div class="overflow-hidden">
+        <img :src="thumbnailImage | transformImage('800x900')" :alt="alt" class="w-full">
       </div>
-      <!-- <img :src="thumbnailImage" class="post-preview-thumbnail"> -->
-      <div class="post-preview-content">
-        <h2>{{ title }}</h2>
-        <!-- <span class="preview-tags" v-for="tag in tags">{{ tag }}</span> -->
-        <p>{{ excerpt }}</p>
+      <div class="w-5/6 -mt-16 pt-2 pr-8 bg-white z-10 relative">
+        <h2 class="text-xl md:text-2xl leading-tight mt-2 md:mt-4">{{ title }}</h2>
+        <p class="text-base mt-2">{{ excerpt }}</p>
       </div>
     </article>
   </nuxt-link>
@@ -36,66 +31,20 @@ export default {
       type: String,
       required: true
     },
-    tags: {
-      type: Array
+    alt: {
+      type: String,
+      required: true
     }
   }
 }
 </script>
 
-<style scoped>
-.post-preview {
-  margin: 1rem 0 3rem;
-  text-decoration: none;
-  color: #373737;
-  width: 100%;
-  display: block;
-  float: left;
+<style>
+img {
+  transition: all .4s ease-in-out;
 }
-
-@media (min-width: 40rem) {
-  .post-preview {
-    width: calc(50% - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-.post-preview-content h2 {
-  font-size: 30px;
-  font-size: calc((.01695*100vw + 22.88136px)*var(--scale-font));
-  text-align: left;
-  margin: 1rem 0
-}
-
-.post-preview-content p {
-  font-size: 14px;
-  font-size: calc((.00508*100vw + 11.86441px)*var(--scale-font));
-}
-
-.post-preview-image {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  transition: all .3s ease;
-}
-
-/* .preview-tags {
-  font-size: 14px;
-  font-size: calc((.00508*100vw + 11.86441px)*var(--scale-font));
-} */
-
-.post-preview:hover .post-preview-image {
-  transform: scale(1.03);
-  transition: all .3s ease;
-}
-
-.post-preview:hover {
-  color: var(--accent-color);
-}
-
-.post-preview-thumbnail {
-  overflow: hidden;
+.teaser:hover article img {
+  transform: scale(1.05);
+  transition: all .4s ease-in-out;
 }
 </style>

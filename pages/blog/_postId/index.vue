@@ -1,16 +1,15 @@
 <template>
   <div id="post">
+    <div class="w-full absolute top-0">
+      <a href="/" class="block max-w-7xl px-4 mx-auto mt-2 md:mt-10 lg:mt-16 xl:mt-24 font-normal text-gray-600 flex back-link"><svg class="fill-current" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M30.83 32.67l-9.17-9.17 9.17-9.17L28 11.5l-12 12 12 12z"></path><path d="M0-.5h48v48H0z" fill="none"></path></svg> Overview</a>
+    </div>
     <section class="post-content">
-      <h1>{{ story.content.title }}</h1>
-      <hr class="divider">
-      <span class="blog-date">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
-      <!-- <div class="tags-container">
-        <span class="tags" v-for="tag in story.tag_list">{{ tag }}</span>
-      </div> -->
+      <h1 class="text-center max-w-5xl mx-auto">{{ story.content.title }}</h1>
+      <span class="font-serif text-base lg:text-xl text-gray-500 text-center mt-4 md:mt-8 lg:mt-10 mx-auto block font-normal">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
       <Hero :hero="story.content.thumbnail" :alt="story.content.alt" />
-      <p class="intro">{{ story.content.summary }}</p>
-      <div class="blog-body" v-html="content">
-      </div>
+      <p class="font-serif text-xl md:text-2xl font-normal max-w-4xl mx-auto mt-8 md:mt-16 px-4 intro">{{ story.content.summary }}</p>
+      <hr class="h-1 w-24 bg-green-700 mx-auto mt-6 md:mt-10">
+      <Content :content="content" />
     </section>
   </div>
 </template>
@@ -19,10 +18,12 @@
 import marked from 'marked'
 import storyblokLivePreview from '@/mixins/storyblokLivePreview'
 import Hero from '@/components/Hero/Hero'
+import Content from '@/components/Content/Content'
 
 export default {
   components: {
-    Hero
+    Hero,
+    Content
   },
   head () {
     return {
@@ -79,68 +80,10 @@ export default {
 </script>
 
 <style>
-#post h1 {
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-  padding: 0 30px;
+.back-link svg {
+  transition: all .2s ease-in-out;
 }
-#post img {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 30px;
+.back-link:hover svg {
+  @apply -ml-1 mr-1;
 }
-
-.divider {
-  width: 5rem;
-  background: var(--accent-color);
-  height: .25rem;
-  margin-bottom: 2rem;
-  border: none;
-}
-
-span.blog-date {
-  font-size: 18px;
-  font-size: calc((.00339*100vw + 16.57627px)*var(--scale-font));
-  color: #737373;
-  text-align: center;
-  margin: 0 auto 2rem;
-  display: block;
-}
-
-.blog-body,
-.intro {
-  max-width: 55rem;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.intro {
-  font-weight: 400;
-  font-size: 18px;
-  font-size: calc((.01186*100vw + 13.01695px)*var(--scale-font));
-  line-height: 1.3;
-  margin: 2rem auto;
-}
-
-@media (min-width: 40rem) {
-  .intro {
-    margin: 3.5rem auto;
-  }
-}
-
-/* .tags {
-  padding: .4rem 1rem;
-  margin: 0 .8rem 0 0;
-  background: #799695;
-  color: #fff;
-}
-
-.tags-container {
-  padding: 2rem 30px;
-  margin: 2rem auto;
-  width: fit-content;
-} */
 </style>
