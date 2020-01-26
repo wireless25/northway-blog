@@ -2,7 +2,7 @@
   <footer class="border-green-600 border-t-4 bg-gray-900 text-white mt-16 py-8">
     <div class="max-w-4xl mx-auto px-4 sm:flex justify-between">
       <div class="flex">
-        <p class="pr-6 align-middle">© 2020 Northway</p>
+        <p class="pr-6 align-middle text-white">© 2020 Northway</p>
         <a href="https://www.instagram.com/oh.north/" class="pr-4 align-middle">
           <svg class="h-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
               <g id="Outline_Icons">
@@ -36,8 +36,8 @@
         </a>
       </div>
       <div class="mt-4 sm:mt-0">
-        <a href="/privacy-policy" class="mr-2">Privacy Policy</a>
-        <a href="/site-note" class="">Site Note</a>
+        <a href="/privacy-policy" class="mr-2 text-white">Privacy Policy</a>
+        <a href="/site-note" class="text-white">Site Note</a>
       </div>
     </div>
   </footer>
