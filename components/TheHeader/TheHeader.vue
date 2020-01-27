@@ -1,7 +1,7 @@
 <template>
   <header class="main-header z-50 shadow-md">
     <nav class="main-nav">
-      <a href="/" id="logo" class="hover:bg-green-700 hover:text-white text-gray-800">N</a>
+      <n-link to="/" id="logo" class="hover:bg-green-700 hover:text-white text-gray-800">N</n-link>
       <ul class="nav-links">
         <nuxt-link to="/" tag="li" class="nav-link"><a>All Posts</a></nuxt-link>
         <nuxt-link to="/about" tag="li" class="nav-link"><a>About</a></nuxt-link>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-green-600 border-t-4 bg-gray-900 text-white mt-16 py-8">
+  <footer class="border-green-700 border-t-4 bg-gray-900 text-white py-8 mt-10 sm:mt-20">
     <div class="max-w-4xl mx-auto px-4 sm:flex justify-between">
       <div class="flex">
         <p class="pr-6 align-middle text-white">© 2020 Northway</p>
@@ -36,8 +36,8 @@
         </a>
       </div>
       <div class="mt-4 sm:mt-0">
-        <a href="/privacy-policy" class="mr-2 text-white">Privacy Policy</a>
-        <a href="/site-note" class="text-white">Site Note</a>
+        <n-link to="/privacy-policy" class="mr-2 text-white">Privacy Policy</n-link>
+        <n-link to="/site-note" class="text-white">Site Note</n-link>
       </div>
     </div>
   </footer>
