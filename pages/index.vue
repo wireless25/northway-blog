@@ -1,8 +1,8 @@
 <template>
   <div class="max-w-full px-4 mx-auto">
     <section class="front">
-      <h1 class="text-center">Northway Blog</h1>
-      <p class="text-lg md:text-xl lg:text-2xl text-center mx-auto mt-6 sm:w-3/4 md:w-1/2">Welcome to the Northway blog. Here you will find insights about vanlife, camperbuilds and a lot more. Find out more about <n-link class="front" to="/about">Northway</n-link></p>
+      <h1 class="md:text-center px-0 mt-10 md:mt-24 lg:mt-32 xl:mt-40">Northway Blog</h1>
+      <p class="text-lg md:text-xl lg:text-2xl md:text-center mx-auto mt-6 sm:w-3/4 md:w-1/2">Welcome to the Northway blog. Here you will find insights about vanlife, camperbuilds and a lot more. Find out more about <n-link class="front" to="/about">Northway</n-link></p>
     </section>
     <section id="posts" class="flex flex-wrap max-w-8xl mx-auto">
       <PostPreview
@@ -50,7 +50,6 @@ export default {
     return {
       posts: posts.data.stories, tags: tags.data.tags
     }
-
   },
   computed: {
     filteredPosts() {

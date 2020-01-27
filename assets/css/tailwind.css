@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @apply text-3xl mt-10 px-4;
+  @apply text-3xl mt-4 px-4;
 }
 
 #content h2 {
@@ -93,7 +93,7 @@ h1 {
   }
 
   h1 {
-    @apply text-4xl mt-24
+    @apply text-4xl mt-8
   }
 }
 
@@ -108,7 +108,7 @@ h1 {
   }
 
   h1 {
-    @apply text-5xl mt-32;
+    @apply text-5xl mt-10;
   }
 
   #content h2 {
@@ -118,7 +118,7 @@ h1 {
 
 @screen xl {
   h1 {
-    @apply text-6xl mt-40;
+    @apply text-6xl mt-12;
   }
 
   #content h2 {

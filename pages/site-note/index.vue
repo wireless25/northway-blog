@@ -1,6 +1,6 @@
 <template>
   <section id="site-note-page">
-    <h1 class="max-w-4xl mx-auto">{{ story.content.title }}</h1>
+    <h1 class="max-w-4xl mx-auto mt-10 md:mt-24 lg:mt-32 xl:mt-40">{{ story.content.title }}</h1>
     <Hero v-if="story.content.heroimg" :hero="story.content.heroimg" />
     <Content :content="content" />
   </section>

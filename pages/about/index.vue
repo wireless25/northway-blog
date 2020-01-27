@@ -1,6 +1,6 @@
 <template>
   <section id="about-page">
-    <h1 class="text-center max-w-5xl mx-auto">{{ story.content.title }}</h1>
+    <h1 class="md:text-center max-w-5xl mx-auto mt-10 md:mt-24 lg:mt-32 xl:mt-40">{{ story.content.title }}</h1>
     <Hero :hero="story.content.heroimg" :alt="story.content.alt" />
     <Content :content="content" />
     <div class="max-w-4xl mx-auto mt-6 md:mt-16 px-4">
