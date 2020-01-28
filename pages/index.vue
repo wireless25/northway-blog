@@ -12,7 +12,7 @@
         :thumbnailImage="post.content.thumbnail"
         :id="post.slug"
         :title="post.content.title"
-        :alt="post.content.alt" />
+        :alt="post.content.alt || post.content.title" />
     </section>
   </div>
 </template>

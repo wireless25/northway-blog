@@ -6,7 +6,7 @@
     <section class="post-content">
       <h1 class="md:text-center max-w-5xl mx-auto">{{ currentPost.content.title }}</h1>
       <span class="font-serif text-base lg:text-xl text-gray-500 text-center mt-4 md:mt-8 lg:mt-10 mx-auto block font-normal">{{ currentPost.first_published_at | moment("D. MMMM YYYY") }}</span>
-      <Hero :hero="currentPost.content.thumbnail" :alt="currentPost.content.alt" />
+      <Hero :hero="currentPost.content.thumbnail" :alt="currentPost.content.alt || currentPost.content.title" />
       <p class="font-serif text-xl md:text-2xl font-normal max-w-4xl mx-auto mt-8 md:mt-16 px-4 intro">{{ currentPost.content.summary }}</p>
       <hr class="h-1 w-24 bg-green-700 mx-auto mt-6 md:mt-10">
       <Content :content="content" />
