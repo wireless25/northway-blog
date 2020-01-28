@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #content p,
 #content ul {
-  @apply mt-4;
+  @apply mt-4 text-lg;
 }
 
 h1 {
@@ -81,7 +81,7 @@ h1 {
 @screen md {
   #content p,
   #content ul {
-    @apply mt-6 text-lg;
+    @apply mt-6 text-xl;
   }
 
   #content h2 {
@@ -123,6 +123,11 @@ h1 {
 
   #content h2 {
     @apply text-3xl mt-20;
+  }
+
+  #content p,
+  #content ul {
+    @apply mt-8 text-body;
   }
 }
 
