@@ -12,14 +12,14 @@
       <Content :content="content" />
     </section>
 
-    <section v-if="relatedPost">
+    <!-- <section v-if="relatedPost">
       <n-link :to="relatedPost.slug" class="text-white h-60 pt-20 pb-24 bg-green-200 mt-20 next-post relative block">
         <div class="overflow-hidden relative h-8 next-post-next-holder">
           <span class="font-serif text-center max-w-5xl mx-auto text-xl next-post-label absolute">Next post</span>
         </div>
         <p class="text-3xl text-gray-800 text-center relative">{{ relatedPost.content.title }}</p>
       </n-link>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -98,21 +98,11 @@ export default {
     content () {
       return marked(this.currentPost.content.content)
     },
-    currentPostArray() {
-      return this.posts.filter((post) => {
-        return post.slug === this.$nuxt.$route.params.postId;
-      })
-    },
     currentPost() {
-      return this.currentPostArray[0];
-    },
-    relatedPostArray() {
-      return this.posts.filter((post) => {
-        return post.uuid === this.currentPost.content.related_post
-      })
+      return this.posts.find(post => post.slug === this.$nuxt.$route.params.postId)
     },
     relatedPost() {
-      return this.relatedPostArray[0];
+      return this.posts.find(post => post.uuid === this.currentPost.content.related_post)
     }
   },
 }
