@@ -6,7 +6,7 @@
     </section>
     <section id="posts" class="flex flex-wrap max-w-8xl mx-auto">
       <PostPreview
-        v-for="post in filteredPosts"
+        v-for="post in posts"
         :key="post.content.slug"
         :excerpt="post.content.summary"
         :thumbnailImage="post.content.thumbnail"
@@ -24,14 +24,6 @@ export default {
   components: {
     PostPreview
   },
-  data () {
-    return {
-      search: '',
-      tag: '',
-      selected: '',
-      allIsActive: true,
-    }
-  },
   async asyncData (context) {
     // Check if we are in the editor mode
     let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
@@ -42,45 +34,9 @@ export default {
       starts_with: 'blog/',
     })
 
-    const tags = await context.app.$storyapi.get('cdn/tags', {
-      version: version,
-      starts_with: 'blog/',
-    })
-
     return {
-      posts: posts.data.stories, tags: tags.data.tags
+      posts: posts.data.stories
     }
-  },
-  computed: {
-    filteredPosts() {
-      return this.posts.filter((post) => {
-        if (this.search) {
-          this.tag = ''
-          this.selected = ''
-          this.allIsActive = true
-          return post.content.title.toLowerCase().match(this.search.toLowerCase())
-        } else {
-          for (var n = 0; n < post.tag_list.length; n++) {
-            return post.tag_list[n].match(this.tag)
-            // TODO: make sure that posts with several tags are displayed correctly
-          }
-        }
-      })
-    }
-  },
-  methods: {
-    filterPosts(tag) {
-      this.search = ''
-      if (tag === '') {
-        this.allIsActive = true
-        this.tag = tag
-        this.selected = ''
-      } else {
-        this.allIsActive = false
-        this.tag = tag
-        this.selected = tag
-      }
-    },
   }
 }
 </script>
