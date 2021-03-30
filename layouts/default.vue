@@ -5,7 +5,7 @@
       <nuxt />
     </main>
     <TheFooter />
-    <CookieControl/>
+    <CookieControl />
   </div>
 </template>
 
@@ -31,28 +31,28 @@ export default {
 
 .main-content {
   margin: 4.5rem auto 0;
-  padding-top: .1rem;
+  padding-top: 0.1rem;
   overflow: auto;
   flex: 1;
 }
 
-.page-enter, .page-leave-active {
+.page-enter,
+.page-leave-active {
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   transform-origin: 50% 50%;
 }
 
 .page-enter-active {
-  animation: acrossIn .5s ease-in-out;
-  transition: opacity .8s ease-in-out;
-} 
+  animation: acrossIn 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
 
 @keyframes acrossIn {
   0% {
     transform: translate3d(0, 3%, 0);
   }
   50% {
-    
   }
   100% {
     transform: translate3d(0, 0, 0);
