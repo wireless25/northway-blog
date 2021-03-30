@@ -1,6 +1,8 @@
 <template>
   <section id="site-note-page">
-    <h1 class="max-w-4xl mx-auto mt-10 md:mt-24 lg:mt-32 xl:mt-40">{{ story.content.title }}</h1>
+    <h1 class="max-w-4xl mx-auto mt-10 md:mt-24 lg:mt-32 xl:mt-40">
+      {{ story.content.title }}
+    </h1>
     <Hero v-if="story.content.heroimg" :hero="story.content.heroimg" />
     <Content :content="content" />
   </section>
@@ -17,7 +19,21 @@ export default {
     Hero,
     Content
   },
-  data () {
+  mixins: [storyblokLivePreview],
+  asyncData(context) {
+    // Check if we are in the editor mode
+    const version =
+      context.query._storyblok || context.isDev ? 'draft' : 'published'
+
+    return context.app.$storyapi
+      .get('cdn/stories/site-note', {
+        version
+      })
+      .then(res => {
+        return res.data
+      })
+  },
+  data() {
     return {
       story: {
         content: {
@@ -26,31 +42,22 @@ export default {
       }
     }
   },
-  head () {
-    return {
-      title: `Northway | Site Note`,
-      meta: [{
-        hid: `description`,
-        property: 'description',
-        content: `Olivia and Stephan on the road with a VW T4 California from 1992. Read some insights about vanlife, camperbuilds and a lot more.`
-      }]
-    }
-  },
   computed: {
-    content () {
+    content() {
       return marked(this.story.content.content)
     }
   },
-  mixins: [storyblokLivePreview],
-  asyncData(context) {
-    // Check if we are in the editor mode
-    let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
-
-    return context.app.$storyapi.get('cdn/stories/site-note', {
-      version: version
-    }).then (res => {
-      return res.data
-    })
+  head() {
+    return {
+      title: `Northway | Site Note`,
+      meta: [
+        {
+          hid: `description`,
+          property: 'description',
+          content: `Olivia and Stephan on the road with a VW T4 California from 1992. Read some insights about vanlife, camperbuilds and a lot more.`
+        }
+      ]
+    }
   }
 }
 </script>

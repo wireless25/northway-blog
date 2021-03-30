@@ -1,14 +1,41 @@
 <template>
   <div id="post">
     <div class="w-full top-0">
-      <n-link to="/" class="block max-w-7xl px-4 -ml-1 xl:mx-auto mt-4 md:mt-10 lg:mt-16 xl:mt-24 font-normal text-gray-600 flex back-link"><svg class="fill-current" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M30.83 32.67l-9.17-9.17 9.17-9.17L28 11.5l-12 12 12 12z"></path><path d="M0-.5h48v48H0z" fill="none"></path></svg> Overview</n-link>
+      <n-link
+        to="/"
+        class="block max-w-7xl px-4 -ml-1 xl:mx-auto mt-4 md:mt-10 lg:mt-16 xl:mt-24 font-normal text-gray-600 flex back-link"
+        ><svg
+          class="fill-current"
+          height="24px"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+        >
+          <path
+            d="M30.83 32.67l-9.17-9.17 9.17-9.17L28 11.5l-12 12 12 12z"
+          ></path>
+          <path d="M0-.5h48v48H0z" fill="none"></path>
+        </svg>
+        Overview</n-link
+      >
     </div>
     <section class="post-content">
-      <h1 class="md:text-center max-w-5xl mx-auto">{{ story.content.title }}</h1>
-      <span class="font-serif text-base lg:text-xl text-gray-500 text-center mt-4 md:mt-8 lg:mt-10 mx-auto block font-normal">{{ story.first_published_at | moment("D. MMMM YYYY") }}</span>
-      <Hero :hero="story.content.thumbnail" :alt="story.content.alt || story.content.title" />
-      <p class="font-serif text-xl md:text-2xl font-normal max-w-4xl mx-auto mt-8 md:mt-16 px-4 intro">{{ story.content.summary }}</p>
-      <hr class="h-1 w-24 bg-green-700 mx-auto mt-6 md:mt-10">
+      <h1 class="md:text-center max-w-5xl mx-auto">
+        {{ story.content.title }}
+      </h1>
+      <span
+        class="font-serif text-base lg:text-xl text-gray-500 text-center mt-4 md:mt-8 lg:mt-10 mx-auto block font-normal"
+        >{{ story.first_published_at | moment('D. MMMM YYYY') }}</span
+      >
+      <Hero
+        :hero="story.content.thumbnail"
+        :alt="story.content.alt || story.content.title"
+      />
+      <p
+        class="font-serif text-xl md:text-2xl font-normal max-w-4xl mx-auto mt-8 md:mt-16 px-4 intro"
+      >
+        {{ story.content.summary }}
+      </p>
+      <hr class="h-1 w-24 bg-green-700 mx-auto mt-6 md:mt-10" />
       <Content :content="content" />
     </section>
 
@@ -35,27 +62,34 @@ export default {
     Content
   },
   mixins: [storyblokLivePreview],
-  data () {
-    return { story: { content: { content: '' } } }
-  },
   asyncData(context) {
     // Check if we are in the editor mode
-    let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
+    const version =
+      context.query._storyblok || context.isDev ? 'draft' : 'published'
 
-    return context.app.$storyapi.get(`cdn/stories/blog/${context.params.postId}`, {
-      version: version
-    }).then(res => {
-      return res.data
-    }).catch((res) => {
-      context.error({ statusCode: res.response.status, message: res.response.data })
-    })
+    return context.app.$storyapi
+      .get(`cdn/stories/blog/${context.params.postId}`, {
+        version
+      })
+      .then(res => {
+        return res.data
+      })
+      .catch(res => {
+        context.error({
+          statusCode: res.response.status,
+          message: res.response.data
+        })
+      })
+  },
+  data() {
+    return { story: { content: { content: '' } } }
   },
   computed: {
-    content () {
+    content() {
       return marked(this.story.content.content)
     }
   },
-  head () {
+  head() {
     return {
       title: `Northway | ${this.story.content.title}`,
       meta: [
@@ -64,24 +98,24 @@ export default {
           name: 'description',
           content: this.story.content.summary
         },
-        { 
-          hid: 'keywords', 
-          name: 'keywords', 
+        {
+          hid: 'keywords',
+          name: 'keywords',
           content: this.story.content.keywords
         },
         {
           hid: `og:image`,
-          property: "og:image",
+          property: 'og:image',
           content: this.story.content.thumbnail
         },
         {
           hid: `og:title`,
-          property: "og:title",
+          property: 'og:title',
           content: this.story.content.title
         },
         {
           hid: `og:url`,
-          property: "og:url",
+          property: 'og:url',
           content: `https://northway.blog${this.$nuxt.$route.path}`
         }
       ]
@@ -92,7 +126,7 @@ export default {
 
 <style>
 .back-link svg {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .back-link:hover svg {
   @apply -ml-1 mr-1;

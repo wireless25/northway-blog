@@ -1,10 +1,17 @@
 <template>
   <header class="main-header z-50 shadow-md">
     <nav class="main-nav">
-      <n-link to="/" id="logo" class="hover:bg-green-700 hover:text-white text-gray-800">N</n-link>
+      <n-link
+        id="logo"
+        to="/"
+        class="hover:bg-green-700 hover:text-white text-gray-800"
+        >N</n-link
+      >
       <ul class="nav-links">
         <nuxt-link to="/" tag="li" class="nav-link"><a>All Posts</a></nuxt-link>
-        <nuxt-link to="/about" tag="li" class="nav-link"><a>About</a></nuxt-link>
+        <nuxt-link to="/about" tag="li" class="nav-link"
+          ><a>About</a></nuxt-link
+        >
       </ul>
     </nav>
   </header>
@@ -76,20 +83,19 @@ export default {}
   align-items: center;
   height: 100%;
   position: absolute;
-  transition: background .3s ease;
-  transition: color .3s ease;
+  transition: background 0.3s ease;
+  transition: color 0.3s ease;
   font-size: 40px;
   font-family: 'PT Serif', serif;
   font-weight: 700;
   text-decoration: none;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
 }
 
 #logo:hover {
-  transition: background .3s ease;
+  transition: background 0.3s ease;
 }
-
 </style>
