@@ -1,8 +1,7 @@
 import axios from 'axios'
 
-const isDev = process.env.NODE_ENV !== 'production'
 const fantomAnalytics = () => {
-  if (isDev) {
+  if (!process.env.FANTHOM_ANALYTICS) {
     return {}
   }
   return {
