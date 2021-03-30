@@ -2,8 +2,8 @@ import axios from 'axios'
 
 const isDev = process.env.NODE_ENV !== 'production'
 const fantomAnalytics = () => {
-  if (!isDev) {
-    return
+  if (isDev) {
+    return {}
   }
   return {
     src: 'https://cdn.usefathom.com/script.js',
@@ -14,6 +14,7 @@ const fantomAnalytics = () => {
 }
 
 export default {
+  target: 'static',
   mode: 'universal',
   head: {
     title: 'Northway',
@@ -45,7 +46,7 @@ export default {
         content: 'tA9P0mUugmVdqJADOKFNVwIu-ZGH4btNQaJEYldLMyY'
       }
     ],
-    script: [fantomAnalytics],
+    script: [fantomAnalytics()],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
