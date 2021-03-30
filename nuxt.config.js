@@ -14,7 +14,6 @@ const fantomAnalytics = () => {
 
 export default {
   target: 'static',
-  mode: 'universal',
   head: {
     title: 'Northway',
     htmlAttrs: {
@@ -38,12 +37,7 @@ export default {
         name: 'keywords',
         content: 'Vanlife,VWT4,Solar,Traveling,Campervan'
       },
-      { hid: 'robots', name: 'robots', content: 'index' },
-      {
-        hid: 'google-site-verification',
-        name: 'google-site-verification',
-        content: 'tA9P0mUugmVdqJADOKFNVwIu-ZGH4btNQaJEYldLMyY'
-      }
+      { hid: 'robots', name: 'robots', content: 'index' }
     ],
     script: [fantomAnalytics()],
     link: [
@@ -125,50 +119,7 @@ export default {
         cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
       }
     ],
-    optional: [
-      {
-        name: 'Google Analitycs',
-        description:
-          'Google Analytics helps us to improve the content on our page.',
-        src: 'https://www.googletagmanager.com/gtag/js?id=UA-140504196-1',
-        async: true,
-        cookies: ['_ga', '_gat', '_gid'],
-        accepted: () => {
-          window.dataLayer = window.dataLayer || []
-          function gtag() {
-            // eslint-disable-next-line no-undef
-            dataLayer.push(arguments)
-          }
-          gtag('js', new Date())
-          gtag('config', 'UA-140504196-1', { anonymize_ip: true })
-        },
-        declined: () => {
-          document.cookie = '_ga' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
-          document.cookie = '_gid' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
-          document.cookie =
-            '_gat_gtag_UA_140504196_1' +
-            '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
-        }
-      },
-      {
-        name: 'Google AdSense',
-        description:
-          'Google Adsense helps us show you relevant content for you.',
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-        async: true,
-        cookies: ['IDE'],
-        accepted: () => {
-          // eslint-disable-next-line no-undef
-          ;(adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: 'ca-pub-4579674376395488',
-            enable_page_level_ads: true
-          })
-        },
-        declined: () => {
-          document.cookie = 'IDE' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
-        }
-      }
-    ]
+    optional: []
   },
   buildModules: [['@nuxtjs/tailwindcss']],
   sitemap: {
