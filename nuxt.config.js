@@ -7,7 +7,7 @@ const fantomAnalytics = () => {
   }
   return {
     src: 'https://cdn.usefathom.com/script.js',
-    'data-site': 'VPNTPBPT',
+    'data-site': 'CJQXCHJL',
     'data-spa': 'auto',
     defer: true
   }
