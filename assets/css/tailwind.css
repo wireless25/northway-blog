@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+    @apply font-serif font-bold;
+  }
+
+  .prose a,
+  .front a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none !important;
+  }
+
+  .prose a::after,
+  .front a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    transition: width 0.3s;
+    background: #2f855a;
+  }
+
+  .prose a::before,
+  .front a::before {
+    content: '';
+    background: rgba(47, 133, 90, 0.1);
+    width: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    transition: width 0.3s;
+  }
+
+  .prose a:hover::after,
+  .front a:hover::after {
+    width: 0;
+  }
+
+  .prose a:hover::before,
+  .front a:hover::before {
+    width: 100%;
+  }
+}
