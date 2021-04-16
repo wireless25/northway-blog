@@ -4,9 +4,18 @@ description: You want to dive into solar power but don't know how much power you
 first_published_at: 2021.04.15
 thumbnail: /northway-blog/campervan-at-beach.jpg
 caption: Campervans with solar panels on the roof parked at the beach.
+keywords: solar system, camper, solar, solar power, campervan, cells
 ---
 
-In this short post, I will help you find out, how much solar power suits your purpose best. It's mainly focused on a campervan in mind, but will also apply to small stationary setups like a small off-grid cabin.
+In this short post, I will help you find out, how much solar power suits your purpose best. It's mainly focused with a campervan in mind, but will also apply to small stationary setups like a small off-grid cabin.
+
+## TL:DR
+
+If you are the lazy type of a person and you just want a solar system on your van without thinking too much, here comes my TL:DR solar advice:
+For small to midsized campers like a VW van, a Ford Transit, or even the small Sprinter from Mercedes, just go with a 200 Watt system. This will suit most people with this kind of vans and an average energy need. You can power a fridge, some chargers for smartphones and laptops, and some lights in the van easily with this setup.
+To achieve this you need Solar panels with a 200 Watt Peak, in most cases 2 panels with 100Wp each, a charge controller with 10A, and some 6mm² cables if you connect them in series. Boom, that's it. 🔥
+
+If you like to know why this is the case, read on and find out how to calculate your system yourself.
 
 ## Where to start
 
@@ -18,12 +27,12 @@ The formula is pretty simple. Add up the power consumption of all electrical dev
 Easy: On basically every device, or on the charger if it is external, is written down how much power (measured in Watt) it needs. Just follow the next 5 simple steps and you're done:
 
 1. Find all electronic devices you will use.
-2. Check how much power this device uses (sticker on the device or on the charger)\*
+2. Check how much power this device uses (sticker on the device or on the charger)
 3. Think about how many hours you will use this device during a typical day
 4. Multiply the Watt with the hours you will use the device => you will have the Watt-hours (Wh) which measures the power consumption
 5. Sum up all the Wh values you got to get the final global power consumption of your setup for a day
 
-- If you can not find any hints on the device about power try the manual or consult Mr. Google.
+> If you can not find any hints on the device about power try the manual or consult Mr. Google.
 
 ## Find out the needed solar power
 

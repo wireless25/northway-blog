@@ -58,5 +58,52 @@ export default {
       src,
     }
   },
+  head() {
+    return {
+      title: `Northway | ${this.post.title}`,
+      meta: [
+        {
+          hid: `description`,
+          name: 'description',
+          content: this.post.description,
+        },
+        {
+          hid: `og:description`,
+          property: 'op:description',
+          content: this.post.description,
+        },
+        {
+          hid: `og:type`,
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.post.keywords,
+        },
+        {
+          hid: `og:image`,
+          property: 'og:image',
+          content: this.src,
+        },
+        {
+          hid: `og:image:alt`,
+          property: 'og:image:alt',
+          content: this.post.caption,
+        },
+        {
+          hid: `og:title`,
+          property: 'og:title',
+          content: this.post.title,
+        },
+        {
+          hid: `og:url`,
+          property: 'og:url',
+          content: `https://northway.blog${this.$nuxt.$route.path}`,
+        },
+      ],
+    }
+  },
 }
 </script>
