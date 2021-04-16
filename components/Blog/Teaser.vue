@@ -1,11 +1,14 @@
 <template>
-  <nuxt-link
-    :to="'/blog/' + id"
-    class="mt-8 md:w-1/2 lg:w-1/3 md:px-2 lg:px-8 md:mt-16 teaser text-nw-gray-text"
-  >
+  <nuxt-link :to="'/blog/' + id" class="mt-8 md:mt-16 teaser text-nw-gray-text">
     <article>
       <div class="overflow-hidden text-nw-gray-text">
-        <img :src="thumbnailImage" :alt="alt" class="w-full" />
+        <img
+          width="600"
+          height="450"
+          :src="thumbnailImage"
+          :alt="alt"
+          class="w-full"
+        />
       </div>
       <div class="relative z-10 w-5/6 pt-2 pr-8 -mt-16 bg-white">
         <h2 class="mt-2 text-xl leading-tight md:text-2xl md:mt-4">

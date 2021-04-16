@@ -7,7 +7,10 @@
         camperbuilds and a lot more.
       </p>
     </section>
-    <section id="posts" class="flex flex-wrap mx-auto max-w-[120rem]">
+    <section
+      id="posts"
+      class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-16 mx-auto max-w-[120rem]"
+    >
       <Teaser
         v-for="post in cloudinaryPosts"
         :id="post.slug"

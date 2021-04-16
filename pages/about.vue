@@ -7,6 +7,8 @@
     </div>
     <figure>
       <img
+        width="1280"
+        height="720"
         :src="src"
         :alt="content.caption"
         class="w-full px-4 mx-auto mt-8 max-w-7xl md:mt-12 lg:mt-20"
@@ -44,8 +46,8 @@ export default {
   async asyncData({ $content, $cloudinary }) {
     const content = await $content('about').fetch()
     const src = await $cloudinary.image.url(content.image, {
-      width: 1920,
-      height: 1080,
+      width: 1280,
+      height: 720,
       crop: 'fill',
       gravity: 'auto',
     })

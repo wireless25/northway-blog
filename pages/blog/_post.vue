@@ -12,7 +12,7 @@
       </span>
     </div>
     <figure class="my-8 xl:my-20">
-      <img :src="src" :alt="post.caption" />
+      <img width="1280" height="720" :src="src" :alt="post.caption" />
       <figcaption
         class="max-w-4xl px-4 pb-4 mx-auto mt-4 mb-4 text-sm font-normal text-center text-gray-600 border-b border-gray-300"
       >
