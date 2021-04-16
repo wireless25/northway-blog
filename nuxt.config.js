@@ -44,9 +44,13 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+      },
+      {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Nunito+Sans:300,400|PT+Serif:400,700',
+          'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=PT+Serif:wght@400;700&display=swap',
       },
     ],
   },
