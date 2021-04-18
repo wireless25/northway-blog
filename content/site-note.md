@@ -1,9 +1,8 @@
 # Contact
 
-Northway  
-Stephan Simonett  
-Voltastrasse 79  
-4056 Basel, Switzerland
+Simonett Software Engineering
+Strandweg 7
+3400 Burgdorf, Switzerland
 
 E-mail: hello@northway.blog
 
