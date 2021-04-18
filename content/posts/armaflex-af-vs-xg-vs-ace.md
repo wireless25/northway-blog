@@ -33,14 +33,17 @@ First of all, do not use ACE. Though it is cheaper, the insulation capabilities 
 
 When it comes to buying Armaflex, it can get a little tricky. In Switzerland where we live you can buy Armaflex only from dedicated stores for insulation and other building materials, which is very expensive. So the best way to get your hands on Armaflex is Amazon. But watch out, there are a lot of sellers and deals which are a little scruffy. Sometimes you get the cheaper ACE without further notice. So make sure to read reviews of the seller before ordering. If you get your stuff from amazon.de, I did the research for you already. You can use the link below and buy from "isolierprofi". I tested this seller myself and was very happy with the delivery.
 
-<external-link href="https://amzn.to/2tVhXbw" track-goal-id="KG8A2SRV">👉 Armaflex on Amazon</external-link>
+<external-link href="https://amzn.to/2tVhXbw" track-goal-id="KG8A2SRV">👉 Armaflex on Amazon DE</external-link>
 
 Other brands are producing similar stuff to Armaflex. I did not use this myself and did not research a lot about them, so do your homework if you like to use those instead.
 
-<external-link href="https://amzn.to/2QLOQk7" track-goal-id="J8MQOL0O">👉 Kaiflex on Amazon</external-link>
+<external-link href="https://amzn.to/2QLOQk7" track-goal-id="J8MQOL0O">👉 Kaiflex on Amazon DE</external-link>
 
 <div class="mt-6">
-  <external-link href="https://amzn.to/37Y1iD9" track-goal-id="YI7DZLLU">👉 K-Flex on Amazon</external-link>
+  <external-link href="https://amzn.to/37Y1iD9" track-goal-id="YI7DZLLU">👉 K-Flex on Amazon DE</external-link>
+</div>
+<div class="mt-6">
+  <external-link href="https://amzn.to/3uS5yzw" track-goal-id="YI7DZLLU">👉 K-Flex on Amazon USA</external-link>
 </div>
 
 If you have any further question or if you want to connect, send us a DM on Instagram @oh.north or send us an email to hello@northway.blog
