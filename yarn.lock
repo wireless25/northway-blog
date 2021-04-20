@@ -1628,10 +1628,10 @@
     consola "^2.15.3"
     defu "^3.2.2"
 
-"@nuxtjs/cloudinary@^1.0.3-beta-3":
-  version "1.0.3-beta-3"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/cloudinary/-/cloudinary-1.0.3-beta-3.tgz#1c4372090aed5e8ffcbb7677ec916c4939986847"
-  integrity sha512-KUcAV11ofg+VAVWo7rIth7Z7FfjmFWlv/TVG2bSuoIRnEN0zXmGI0Q7KUCxUblynhlovqig7AqiO2ELQDDxcFQ==
+"@nuxtjs/cloudinary@^1.0.3-beta-4":
+  version "1.0.3-beta-4"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/cloudinary/-/cloudinary-1.0.3-beta-4.tgz#f3021203e8a7711562e3659b4cc37afab6a9d7aa"
+  integrity sha512-iMaJCvMKC3GW4F0Pw4Cn7lTRhw4CUm6bOoLx1ouEc66+rRQPQhTKxyeCNsMQ87tef1h8yH3U9jKSH7Sk5VtZSA==
   dependencies:
     "@cld-apis/utils" "^0.1.1"
     chalk "^4.1.0"
