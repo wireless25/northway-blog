@@ -88,6 +88,8 @@ export default {
     '@nuxt/content',
     // https://sitemap.nuxtjs.org
     '@nuxtjs/sitemap',
+    // https://i18n.nuxtjs.org/setup
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -120,5 +122,21 @@ export default {
       'privacy-policy',
       'site-note',
     ],
+  },
+
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          welcome: 'Welcome',
+        },
+        de: {
+          welcome: 'Willkommen',
+        },
+      },
+    },
   },
 }
