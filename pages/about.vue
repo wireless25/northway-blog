@@ -43,8 +43,11 @@
 
 <script>
 export default {
-  async asyncData({ $content, $cloudinary }) {
-    const content = await $content('about').fetch()
+  async asyncData({ $content, $cloudinary, i18n, route }) {
+    const pathSegments = route.path.split('/')
+    const realPath = pathSegments[pathSegments.length - 1]
+
+    const content = await $content(realPath).where({ lang: i18n.code }).fetch()
     const src = await $cloudinary.image.url(content.image, {
       width: 1280,
       height: 720,
@@ -68,6 +71,12 @@ export default {
         },
       ],
     }
+  },
+  nuxtI18n: {
+    paths: {
+      en: '/about',
+      de: '/ueber-uns',
+    },
   },
 }
 </script>

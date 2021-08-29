@@ -13,10 +13,16 @@
         </a>
       </div>
       <div class="mt-4 sm:mt-0">
-        <n-link to="/privacy-policy" class="mr-2 text-white"
-          >Privacy Policy</n-link
+        <n-link
+          :to="localePath($t('navigation.privacy.route'))"
+          class="mr-2 text-white"
+          >{{ $t('navigation.privacy.label') }}</n-link
         >
-        <n-link to="/site-note" class="text-white">Site Note</n-link>
+        <n-link
+          :to="localePath($t('navigation.siteNote.route'))"
+          class="text-white"
+          >{{ $t('navigation.siteNote.label') }}</n-link
+        >
       </div>
     </div>
   </footer>

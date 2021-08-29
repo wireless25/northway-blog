@@ -1,3 +1,9 @@
+---
+lang: en
+en: privacy-policy
+de: datenschutz
+---
+
 # Privacy policy
 
 The responsible person within the meaning of the data protection laws, in particular, the EU Data Protection Basic Regulation (DSGVO):

@@ -5,6 +5,9 @@ first_published_at: 2020.01.01
 thumbnail: /northway-blog/workshop.jpg
 caption: Hanging tools on a workshop wall
 keywords: Armaflex,Insulation,Campervan,DIY Camper,XG,ACE,Armaflex AF,Kaiflex,K-Flex,Armaflex AF vs. XG,Armaflex AF vs. XG vs. ACE
+lang: en
+en: armaflex-af-vs-xg-vs-ace
+de: armaflex-af-und-xg-und-ace-im-vergleich
 ---
 
 ACE, on the other hand, is an older version of Armaflex with worse insulation capabilities and is therefore also cheaper.

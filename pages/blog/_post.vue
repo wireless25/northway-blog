@@ -24,7 +24,7 @@
       <p class="font-serif">{{ post.description }}</p>
       <hr class="w-24 h-1 mx-auto mt-6 bg-green-700 md:mt-10" />
       <nuxt-content :document="post" />
-      <nuxt-link to="/" class="flex flex-row items-center">
+      <nuxt-link :to="localePath('/')" class="flex flex-row items-center">
         <svg
           height="24px"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@
           ></path>
           <path d="M0-.5h48v48H0z" fill="none"></path>
         </svg>
-        <span> Overview </span>
+        <span>{{ $t('overview') }}</span>
       </nuxt-link>
     </section>
   </article>
@@ -44,18 +44,32 @@
 
 <script>
 export default {
-  async asyncData({ $content, $cloudinary, params }) {
-    const post = await $content('posts', params.post).fetch()
-    const src = await $cloudinary.image.url(post.thumbnail, {
-      width: 1280,
-      height: 720,
-      crop: 'fill',
-      gravity: 'auto',
-    })
+  async asyncData({ $content, $cloudinary, params, store, i18n, redirect }) {
+    try {
+      const post = await $content('posts', params.post)
+        .where({ lang: i18n.locale })
+        .fetch()
 
-    return {
-      post,
-      src,
+      const langUrls = store.dispatch('i18n/setRouteParams', {
+        en: { post: post.en },
+        de: { post: post.de },
+      })
+
+      const src = $cloudinary.image.url(post.thumbnail, {
+        width: 1280,
+        height: 720,
+        crop: 'fill',
+        gravity: 'auto',
+      })
+
+      Promise.all([langUrls, src])
+
+      return {
+        post,
+        src,
+      }
+    } catch {
+      redirect('/error/page-not-found')
     }
   },
   head() {

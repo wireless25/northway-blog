@@ -5,6 +5,9 @@ first_published_at: 2021.04.15
 thumbnail: /northway-blog/campervan-at-beach.jpg
 caption: Campervans with solar panels on the roof parked at the beach.
 keywords: solar system, camper, solar, solar power, campervan, cells
+lang: en
+en: how-much-solar-power-do-i-need
+de: wie-viel-solar-panels-brauche-ich
 ---
 
 In this short post, I will help you find out, how much solar power suits your purpose best. It's mainly focused with a campervan in mind, but will also apply to small stationary setups like a small off-grid cabin.

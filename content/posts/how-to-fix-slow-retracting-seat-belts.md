@@ -5,6 +5,9 @@ first_published_at: 2020.03.03
 thumbnail: /northway-blog/seatbelt.jpg
 caption: A person driving a car, the seat belt is in focus
 keywords: seat belt, retracting, how to, fix seat belt, DIY car, seat, belt, seat belt slow retracting
+lang: en
+en: how-to-fix-slow-retracting-seat-belts
+de: schlecht-einziehenden-gurt-gaengig-machen
 ---
 
 It is a commonly known issue. The seat belt is not retracting correctly anymore. It not only sucks big time cause the seat belt gets into your way when getting out of the car but also can get stuck in the door when you close it. Other than that, it can have dangerous consequences as the belt is not working correctly anymore. So the earlier you fix it, the better.

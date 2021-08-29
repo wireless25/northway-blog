@@ -13,5 +13,8 @@ import TheFooter from '@/components/TheFooter/index.vue'
 
 export default Vue.extend({
   components: { TheHeader, TheFooter },
+  head() {
+    return this.$nuxtI18nHead({ addSeoAttributes: true })
+  },
 })
 </script>

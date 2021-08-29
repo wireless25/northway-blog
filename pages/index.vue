@@ -1,10 +1,9 @@
 <template>
   <div>
     <section class="mx-auto prose max-w-prose md:prose-xl xl:prose-2xl">
-      <h1 class="px-0 md:text-center">Northway Blog</h1>
+      <h1 class="px-0 md:text-center">{{ $t('front.title') }}</h1>
       <p class="mx-auto md:text-center sm:w-3/4">
-        Welcome to the Northway blog. Here you will find insights about vanlife,
-        camperbuilds and a lot more.
+        {{ $t('front.subline') }}
       </p>
     </section>
     <section
@@ -30,8 +29,9 @@ export default {
   components: {
     Teaser,
   },
-  async asyncData({ $content }) {
+  async asyncData({ $content, i18n }) {
     const posts = await $content('posts')
+      .where({ lang: i18n.locale })
       .sortBy('first_published_at', 'desc')
       .fetch()
 

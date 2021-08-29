@@ -3,6 +3,7 @@ title: About us!
 description: Olivia and Stephan on the road with a VW T4 California from 1992. Read some insights about vanlife, camperbuilds and a lot more.
 image: /northway-blog/about.jpg
 caption: Olivia and Stephan
+lang: en
 ---
 
 ## Northway it's called?

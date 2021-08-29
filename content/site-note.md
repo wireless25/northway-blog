@@ -1,3 +1,9 @@
+---
+lang: en
+en: site-note
+de: impressum
+---
+
 # Contact
 
 Simonett Software Engineering

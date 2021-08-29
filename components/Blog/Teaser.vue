@@ -1,5 +1,8 @@
 <template>
-  <nuxt-link :to="'/blog/' + id" class="mt-8 md:mt-16 teaser text-nw-gray-text">
+  <nuxt-link
+    :to="localePath('/blog/' + id)"
+    class="mt-8 md:mt-16 teaser text-nw-gray-text"
+  >
     <article>
       <div class="overflow-hidden text-nw-gray-text">
         <img

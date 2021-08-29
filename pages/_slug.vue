@@ -8,11 +8,22 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const content = await $content(params.slug).fetch()
+  async asyncData({ $content, params, store, i18n, redirect }) {
+    try {
+      const content = await $content(params.slug)
+        .where({ lang: i18n.locale })
+        .fetch()
 
-    return {
-      content,
+      await store.dispatch('i18n/setRouteParams', {
+        en: { slug: content.en },
+        de: { slug: content.de },
+      })
+
+      return {
+        content,
+      }
+    } catch {
+      redirect('/error/page-not-found')
     }
   },
 }
