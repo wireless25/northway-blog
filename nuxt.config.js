@@ -49,8 +49,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=PT+Serif:wght@400;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=PT+Serif:wght@400;700&display=swap',
       },
     ],
   },

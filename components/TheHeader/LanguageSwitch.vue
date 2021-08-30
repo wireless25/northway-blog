@@ -3,7 +3,17 @@
     <select
       id="location"
       name="location"
-      class="w-full py-2 pl-3 pr-10 mt-1 text-base border-gray-300 focus:outline-none focus:ring-green-700 focus:border-green-700 sm:text-sm"
+      class="
+        w-full
+        py-2
+        pl-3
+        pr-10
+        mt-1
+        text-base
+        border-gray-300
+        focus:outline-none focus:ring-green-700 focus:border-green-700
+        sm:text-sm
+      "
       aria-label="change language"
       @input="changeLanguage($event)"
     >

@@ -14,7 +14,18 @@
         class="w-full px-4 mx-auto mt-8 max-w-7xl md:mt-12 lg:mt-20"
       />
       <figcaption
-        class="max-w-4xl px-4 pb-4 mx-auto mt-4 mb-4 text-sm font-normal text-center text-gray-600 border-b border-gray-300"
+        class="
+          max-w-4xl
+          px-4
+          pb-4
+          mx-auto
+          mt-4
+          mb-4
+          text-sm
+          font-normal
+          text-center text-gray-600
+          border-b border-gray-300
+        "
       >
         {{ content.caption }}
       </figcaption>
