@@ -1,7 +1,7 @@
 ---
 title: How much solar power do I need
 description: You want to dive into solar power but don't know how much power you need? I got you covered.
-first_published_at: 2021.04.15
+first_published_at: 2021-04-15
 thumbnail: /northway-blog/campervan-at-beach.jpg
 caption: Campervans with solar panels on the roof parked at the beach.
 keywords: solar system, camper, solar, solar power, campervan, cells

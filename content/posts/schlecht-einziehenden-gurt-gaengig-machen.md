@@ -1,7 +1,7 @@
 ---
 title: Einen schlecht einziehenden Gurt wieder gängig machen
 description: Haben Sie das Problem, dass Ihr Sicherheitsgurt nicht mehr richtig aufrollt? Hier ist eine Lösung.
-first_published_at: 2020.03.03
+first_published_at: 2020-03-03
 thumbnail: /northway-blog/seatbelt.jpg
 caption: Eine Person, die ein Auto fährt, der Sicherheitsgurt ist im Fokus
 keywords: Gurt, Einziehen, Gurt flicken, Auto DIY, Sitz, Gurt zieht nicht ein

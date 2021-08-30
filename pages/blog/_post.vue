@@ -2,19 +2,42 @@
   <article>
     <div class="mx-auto prose max-w-prose md:prose-xl xl:prose-2xl">
       <h1>{{ post.title }}</h1>
-      <span
-        class="block mx-auto mt-4 font-serif text-base font-normal text-center text-gray-500 lg:text-xl md:mt-8 lg:mt-10"
+      <time
+        :datetime="post.first_published_at || post.createdAt"
+        class="
+          block
+          mx-auto
+          mt-4
+          font-serif
+          text-base
+          font-normal
+          text-center text-gray-500
+          lg:text-xl
+          md:mt-8
+          lg:mt-10
+        "
         >{{
           $moment(post.first_published_at || post.createdAt).format(
             'D. MMMM YYYY'
           )
         }}
-      </span>
+      </time>
     </div>
     <figure class="my-8 xl:my-20">
       <img width="1280" height="720" :src="src" :alt="post.caption" />
       <figcaption
-        class="max-w-4xl px-4 pb-4 mx-auto mt-4 mb-4 text-sm font-normal text-center text-gray-600 border-b border-gray-300"
+        class="
+          max-w-4xl
+          px-4
+          pb-4
+          mx-auto
+          mt-4
+          mb-4
+          text-sm
+          font-normal
+          text-center text-gray-600
+          border-b border-gray-300
+        "
       >
         {{ post.caption }}
       </figcaption>

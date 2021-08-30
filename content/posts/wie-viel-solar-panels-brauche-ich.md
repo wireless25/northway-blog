@@ -1,7 +1,7 @@
 ---
 title: Wieviel Solar Panels braue ich?
 description: Sie möchten in die Solarenergie einsteigen, wissen aber nicht, wie viel Strom Sie benötigen? Ich habe alles für Sie.
-first_published_at: 2021.04.15
+first_published_at: 2021-04-15
 thumbnail: /northway-blog/campervan-at-beach.jpg
 caption: Wohnmobile mit Solarzellen auf dem Dach, die am Strand geparkt sind.
 keywords: Solaranlage, Camper, Solar, Solarstrom, Campervan, Solarzellen, Solar auf dem Dach

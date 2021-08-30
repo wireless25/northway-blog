@@ -1,7 +1,7 @@
 ---
 title: How to fix slow retracting seat belts
 description: Do you have the problem that your seat belt is not retracting correctly anymore? Heres a fix.
-first_published_at: 2020.03.03
+first_published_at: 2020-03-03
 thumbnail: /northway-blog/seatbelt.jpg
 caption: A person driving a car, the seat belt is in focus
 keywords: seat belt, retracting, how to, fix seat belt, DIY car, seat, belt, seat belt slow retracting

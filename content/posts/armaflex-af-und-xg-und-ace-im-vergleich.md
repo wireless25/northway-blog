@@ -1,7 +1,7 @@
 ---
 title: Was ist der Unterschied zwischen Armaflex AF, XG und ACE
 description: Armaflex AF und XG haben die gleichen Spezifikationen bezüglich Dämmfähigkeit. AF hat eine antibakterielle Oberfläche namens Microban, die es auch etwas teurer macht.
-first_published_at: 2020.01.01
+first_published_at: 2020-01-01
 thumbnail: /northway-blog/workshop.jpg
 caption: Werkzeuge an der Werkstattwand
 keywords: Armaflex,Isolierung,Campervan,DIY Camper,XG,ACE,Armaflex AF,Kaiflex,K-Flex,Armaflex AF vs. XG,Armaflex AF vs. XG vs. ACE

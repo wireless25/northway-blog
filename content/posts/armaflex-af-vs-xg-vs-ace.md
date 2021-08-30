@@ -1,7 +1,7 @@
 ---
 title: What is the best insulation for your camper? Armaflex AF vs. XG vs. ACE in comparison
 description: Armaflex AF and XG have the same specs when it comes to insulation capabilities. AF has an antibacterial surface called Microban, which makes it more expensive.
-first_published_at: 2020.01.01
+first_published_at: 2020-01-01
 thumbnail: /northway-blog/workshop.jpg
 caption: Hanging tools on a workshop wall
 keywords: Armaflex,Insulation,Campervan,DIY Camper,XG,ACE,Armaflex AF,Kaiflex,K-Flex,Armaflex AF vs. XG,Armaflex AF vs. XG vs. ACE
