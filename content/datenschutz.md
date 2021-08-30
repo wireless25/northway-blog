@@ -46,7 +46,7 @@ Der Provider dieser Website erhebt und speichert automatisch Informationen in so
 - Hostname des zugreifenden Rechners
 - Uhrzeit der Serveranfrage
 
-Diese Daten sind für uns nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden. Übersetzt mit www.DeepL.com/Translator (kostenlose Version)
+Diese Daten sind für uns nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
 
 ## Datenschutzerklärung für die Nutzung von Google Web Fonts
 
@@ -90,4 +90,4 @@ Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder 
 
 Basel, 24.01.2020
 
-Quelle: [SwissAnwalt](https://www.swissanwalt.ch/) Übersetzt mit www.DeepL.com/Translator (kostenlose Version)
+Quelle: [SwissAnwalt](https://www.swissanwalt.ch/)

@@ -66,8 +66,51 @@ In the winter months, you will maybe not get enough energy with this 200Wp, in s
 
 It's a starting point to find out if you need a 100Wp panel on your roof or 5 of them. These calculations are not an exact science, but more of a rule of thumb but with real localized data.
 
-Now it is time to buy some panels? I made really good results with panels that use cells from [Sun Power](https://us.sunpower.com/). It's a company from the US and we use panels with Sun Power cells for years now, never disappointed.
+Now it is time to buy some panels? I made really good results with panels that use cells from [Sun Power](https://us.sunpower.com/). It's a company from the US and we use panels with Sun Power cells for years now, never disappointed. Following a list of products, we use in our van, which I can recommend. All links lead to Amazon DE from the Offgridtec store, an excellent source for solar products.
 
-<external-link href="https://amzn.to/3mQDXfb" track-goal-id="E0XIAE4E">👉 Flexibel solar panel with Sun Power cells on Amazon</external-link>
+### Panels
+<external-link href="https://amzn.to/3mNpQt4" track-goal-id="ZZ5XKUB7">
+  👉 110WP flexible solar panel with Sun Power cells
+</external-link>
+
+<div class="mt-6">
+  <external-link href="https://amzn.to/2WsRfpD" track-goal-id="ZZ5XKUB7">
+    👉 135WP flexible solar panel with Sun Power cells
+  </external-link>
+</div>
+
+<div class="mt-6">
+  <external-link href="https://amzn.to/3zshfzG" track-goal-id="ZZ5XKUB7">
+    👉 150WP flexible solar panel with Sun Power cells
+  </external-link>
+</div>
+
+### Charge controllers
+I love products from [Victron Energy](https://www.victronenergy.com). A lot of devices have built-in Bluetooth so that you can connect them with your Smartphone. On the Victron app, you can monitor your system and keep track of your loads.
+
+<external-link href="https://amzn.to/3kCozlP" track-goal-id="A8IGRLYH">
+  👉 Charge controllers from Victron
+</external-link>
+
+### Batteries
+Again, I can recommend [Victron Energy](https://www.victronenergy.com) products, also for batteries. Here you find a Lithium battery, but also the cheaper AGM and Gel batteries are top notch.
+
+<external-link href="https://amzn.to/3t1aHWm" track-goal-id="BUD24RT2">
+  👉 200Ah lithium battery from Victron
+</external-link>
+
+<div class="mt-6">
+  <external-link href="https://amzn.to/2WDMucP" track-goal-id="LBE7UC2P">
+    👉 230Ah AGM battery from Victron
+  </external-link>
+</div>
+
+### Complete system
+If you like the "carefree package", you could go for a complete system from Offgridtec. They include everything you need, also for mounting them on your vehicle. Everything is included except for the battery; you don't need to hassle calculating cable diameters and stuff.
+I link a 200WP system which is ideally suited for a VW bus with average energy needs.
+
+<external-link href="https://amzn.to/3jtwUJy" track-goal-id="LJ825E0W">
+  👉 200WP Offgridtec complete system
+</external-link>
 
 If you have any further question or if you want to connect, send us a DM on Instagram [@oh.north](https://www.instagram.com/oh.north/) or send us an email to [hello@northway.blog](mailto:hello@northway.blog)

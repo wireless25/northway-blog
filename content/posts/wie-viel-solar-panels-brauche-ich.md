@@ -41,7 +41,7 @@ Ganz einfach: Auf praktisch jedem Gerät, oder auf dem Ladegerät, wenn es exter
 
 Um dies genau zu berechnen, müssen wir eine Menge Dinge berücksichtigen, und es wird schnell sehr kompliziert. Deshalb werden wir mit einigen Standard- und Praxiswerten rechnen. Für die meisten Menschen wird dies einen ersten Eindruck davon vermitteln, wie groß Ihre Solaranlage sein sollte.
 
-Da wir nun wissen, wie viel Energie wir mit unserer netzunabhängigen Anlage verbrauchen werden, müssen Sie wissen, wo und wann im Jahr Sie Ihre Anlage am meisten nutzen werden. Wenn Sie sie nur im Sommer nutzen, können Sie sie etwas kleiner bauen. Wenn Sie sie das ganze Jahr über nutzen und zum Beispiel in Nordeuropa leben, müssen Sie sie größer dimensionieren. Um herauszufinden, wie viel Energie Sie in Ihrer Gegend bekommen können, gehen Sie zu [globalsolaratlas.info] (https://globalsolaratlas.info/) und suchen Sie nach Ihrem Standort. Es muss nicht besonders genau sein, da du mit deinem Wohnmobil sowieso herumreisen wirst.
+Da wir nun wissen, wie viel Energie wir mit unserer netzunabhängigen Anlage verbrauchen werden, müssen Sie wissen, wo und wann im Jahr Sie Ihre Anlage am meisten nutzen werden. Wenn Sie sie nur im Sommer nutzen, können Sie sie etwas kleiner bauen. Wenn Sie sie das ganze Jahr über nutzen und zum Beispiel in Nordeuropa leben, müssen Sie sie größer dimensionieren. Um herauszufinden, wie viel Energie Sie in Ihrer Gegend bekommen können, gehen Sie zu [globalsolaratlas.info](https://globalsolaratlas.info/) und suchen Sie nach Ihrem Standort. Es muss nicht besonders genau sein, da du mit deinem Wohnmobil sowieso herumreisen wirst.
 
 Wenn ich das für Basel mache, eine Stadt in der Schweiz, die ziemlich genau in der Mitte Westeuropas liegt, erhalte ich einen Wert von 3,184 kWh/m² potenzieller Energie pro Tag über das Jahr. Die Faustregel besagt, dass 2/3 dieser Energie in den 6 Monaten des Sommerhalbjahres auf den Boden fällt.
 
@@ -66,8 +66,51 @@ In den Wintermonaten werden Sie mit diesen 200 Wp vielleicht nicht genug Energie
 
 Dies ist ein Ausgangspunkt, um herauszufinden, ob Sie ein 100-Wp-Panel auf Ihrem Dach oder 5 davon benötigen. Bei diesen Berechnungen handelt es sich nicht um eine exakte Wissenschaft, sondern eher um eine Faustformel, die jedoch auf realen lokalen Daten beruht.
 
-Ist es nun an der Zeit, ein paar Paneele zu kaufen? Ich habe sehr gute Ergebnisse mit Modulen erzielt, die Zellen von [Sun Power](https://us.sunpower.com/) verwenden. Das ist ein Unternehmen aus den USA, und wir verwenden seit Jahren Paneele mit Sun Power-Zellen und sind nie enttäuscht worden.
+Jetzt ist es an der Zeit, einige Paneele zu kaufen? Ich habe wirklich gute Ergebnisse mit Modulen erzielt, die Zellen von [Sun Power](https://us.sunpower.com/) verwenden. Das ist eine Firma aus den USA, und wir verwenden seit Jahren Paneele mit Sun Power-Zellen und sind nie enttäuscht worden. Nachfolgend eine Liste von Produkten, die wir in unserem Van verwenden und die ich empfehlen kann. Alle Links führen zu Amazon DE aus dem Offgridtec-Shop, einer hervorragenden Quelle für Solarprodukte.
 
-<external-link href="https://amzn.to/3mQDXfb" track-goal-id="E0XIAE4E">👉 Flexibel solar panel with Sun Power cells on Amazon</external-link>
+### Panels
+<external-link href="https://amzn.to/3mNpQt4" track-goal-id="ZZ5XKUB7">
+  👉 110WP flexibles Solarmodul mit Sun Power Zellen
+</external-link>
+
+<div class="mt-6">
+  <external-link href="https://amzn.to/2WsRfpD" track-goal-id="ZZ5XKUB7">
+    👉 135WP flexibles Solarmodul mit Sun Power Zellen
+  </external-link>
+</div>
+
+<div class="mt-6">
+  <external-link href="https://amzn.to/3zshfzG" track-goal-id="ZZ5XKUB7">
+    👉 150WP flexibles Solarmodul mit Sun Power Zellen
+  </external-link>
+</div>
+
+### Laderegler
+Ich liebe die Produkte von [Victron Energy](https://www.victronenergy.com). Viele Geräte haben Bluetooth eingebaut, so dass man sie mit seinem Smartphone verbinden kann. Mit der Victron-App können Sie Ihr System überwachen und Ihre Lasten im Auge behalten.
+
+<external-link href="https://amzn.to/3kCozlP" track-goal-id="A8IGRLYH">
+  👉 Laderegler von Victron
+</external-link>
+
+### Batterien
+Auch hier kann ich die Produkte von [Victron Energy](https://www.victronenergy.com) empfehlen, auch für Batterien. Hier gibt es eine Lithium-Batterie, aber auch die günstigeren AGM- und Gel-Batterien sind top.
+
+<external-link href="https://amzn.to/3t1aHWm" track-goal-id="BUD24RT2">
+  👉 200Ah Lithium-Batterie von Victron
+</external-link>
+
+<div class="mt-6">
+  <external-link href="https://amzn.to/2WDMucP" track-goal-id="LBE7UC2P">
+    👉 230Ah AGM-Batterie von Victron
+  </external-link>
+</div>
+
+### Komplettsystem
+Wer das "Rundum-Sorglos-Paket" mag, könnte sich für ein Komplettsystem von Offgridtec entscheiden. Sie enthalten alles, was Sie brauchen, auch für die Montage an Ihrem Fahrzeug. Bis auf die Batterie ist alles im Lieferumfang enthalten; Sie müssen sich nicht mit der Berechnung von Kabeldurchmessern und ähnlichem herumärgern.
+Ich verlinke ein 200WP System, das für einen VW Bus mit durchschnittlichem Energiebedarf ideal geeignet ist.
+
+<external-link href="https://amzn.to/3jtwUJy" track-goal-id="LJ825E0W">
+  👉 200WP Offgridtec Komplettsystem
+</external-link>
 
 Wenn Sie weitere Fragen haben oder sich mit uns in Verbindung setzen wollen, schicken Sie uns eine DM auf Instagram [@oh.north](https://www.instagram.com/oh.north/) oder eine E-Mail an [hello@northway.blog](mailto:hello@northway.blog)
