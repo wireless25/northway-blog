@@ -28,7 +28,8 @@ To roll the seat belt like new again, you can use silicone spray. Sounds strange
 
 I made very good results with silicone spray from WD40. Get it here:
 
-<external-link href="https://amzn.to/2VBknIm" track-goal-id="YWJQ8KWF">👉 WD40 on Amazon</external-link>
+<external-link href="https://amzn.to/3zWjAmA" track-goal-id="YWJQ8KWF">👉 WD40 on Amazon</external-link>
+<external-link href="https://amzn.to/2VBknIm" track-goal-id="YWJQ8KWF">👉 WD40 on Amazon **DE**</external-link>
 
 > Happy cleaning!
 
