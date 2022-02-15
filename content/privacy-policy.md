@@ -48,12 +48,6 @@ The provider of this website automatically collects and stores information in so
 
 These data cannot be assigned to specific persons. A consolidation of this data with other data sources is not carried out. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.
 
-## Privacy policy for the use of Google Web Fonts
-
-This website uses so-called web fonts, which are provided by Google, for the uniform display of fonts. When you call up a page, your browser loads the required web fonts into its browser cache to display texts and fonts correctly. If your browser does not support web fonts, a standard font from your computer will be used.
-
-More information about Google Web Fonts can be found at https://developers.google.com/fonts/faq and in the Google Privacy Policy: https://www.google.com/policies/privacy/.
-
 ## Amazon Affiliate Program
 
 We are entitled based on our legitimate interests within the meaning of Art. 6 paragraph 1 lit. f. DSGVO, participants in the Amazon EU partner program, which was designed to provide a medium for websites, by means of which advertising costs can be earned by placing advertisements and links to Amazon (affiliate system). As an Amazon partner, we earn on qualified purchases.

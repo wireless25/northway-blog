@@ -48,12 +48,6 @@ Der Provider dieser Website erhebt und speichert automatisch Informationen in so
 
 Diese Daten sind für uns nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
 
-## Datenschutzerklärung für die Nutzung von Google Web Fonts
-
-Diese Website verwendet zur einheitlichen Darstellung von Schriftarten sogenannte Web Fonts, die von Google bereitgestellt werden. Wenn Sie eine Seite aufrufen, lädt Ihr Browser die benötigten Web Fonts in seinen Browsercache, um Texte und Schriftarten korrekt darzustellen. Unterstützt Ihr Browser keine Web Fonts, wird eine Standardschrift von Ihrem Computer verwendet.
-
-Weitere Informationen zu Google Web Fonts finden Sie unter https://developers.google.com/fonts/faq und in den Google-Datenschutzbestimmungen: https://www.google.com/policies/privacy/.
-
 ## Amazon Partnerprogramm
 
 Wir sind berechtigt, auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO, Teilnehmer des Partnerprogramms von Amazon EU, das zur Bereitstellung eines Mediums für Websites konzipiert wurde, mittels dessen durch die Platzierung von Werbeanzeigen und Links zu Amazon Werbekostenerstattung verdient werden kann (Affiliate-System). Als Amazon-Partner verdienen wir an qualifizierten Käufen.
