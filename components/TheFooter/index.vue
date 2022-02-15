@@ -1,13 +1,6 @@
 <template>
   <footer
-    class="
-      py-8
-      mt-10
-      text-white
-      bg-gray-900
-      border-t-4 border-green-700
-      sm:mt-20
-    "
+    class="py-8 mt-10 text-white bg-gray-900 border-t-4 border-green-700 sm:mt-20"
   >
     <div class="justify-between max-w-4xl px-4 mx-auto sm:flex">
       <div class="flex items-center">

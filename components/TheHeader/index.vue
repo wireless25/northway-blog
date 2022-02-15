@@ -1,36 +1,11 @@
 <template>
   <header
-    class="
-      relative
-      flex
-      justify-between
-      w-full
-      h-20
-      px-4
-      font-light
-      sm:px-6
-      lg:px-8
-    "
+    class="relative flex justify-between w-full h-20 px-4 font-light sm:px-6 lg:px-8"
   >
     <div>
       <n-link
         :to="localePath('/')"
-        class="
-          flex
-          select-none
-          items-center
-          w-[60px]
-          text-[40px]
-          justify-center
-          h-full
-          font-serif font-bold
-          text-gray-800
-          no-underline
-          transition-all
-          duration-300
-          ease-in-out
-          hover:bg-green-700 hover:text-white
-        "
+        class="flex select-none items-center w-[60px] text-[40px] justify-center h-full font-serif font-bold text-gray-800 no-underline transition-all duration-300 ease-in-out hover:bg-green-700 hover:text-white"
         >N</n-link
       >
     </div>
