@@ -8,9 +8,12 @@
         <a href="https://www.instagram.com/oh.north/" class="pr-4 align-middle">
           <Icon icon="instagram" />
         </a>
-        <a href="mailto:hello@northway.blog" class="align-middle">
-          <Icon icon="envelope" />
-        </a>
+        <n-link
+          :to="localePath($t('navigation.contact.route'))"
+          class="align-middle"
+          :aria-label="$t('navigation.contact.label')"
+          ><Icon icon="envelope"
+        /></n-link>
       </div>
       <div class="mt-4 sm:mt-0">
         <n-link

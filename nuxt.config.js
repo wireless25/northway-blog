@@ -171,6 +171,10 @@ export default {
               label: 'Site Note',
               route: '/site-note',
             },
+            contact: {
+              label: 'Contact',
+              route: '/contact',
+            },
           },
           overview: 'Overview',
           'home link': 'Go back home',
@@ -191,6 +195,10 @@ export default {
             siteNote: {
               label: 'Impressum',
               route: '/impressum',
+            },
+            contact: {
+              label: 'Kontact',
+              route: '/kontakt',
             },
           },
           overview: 'Übersicht',
