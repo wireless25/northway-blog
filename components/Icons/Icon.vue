@@ -2,6 +2,7 @@
   <!-- eslint-disable-next-line vue/no-v-html -->
   <span
     class="flex items-center justify-center w-4 h-4"
+    aria-hidden="true"
     v-html="icons[icon]"
   ></span>
 </template>
