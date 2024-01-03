@@ -7,8 +7,8 @@ de: impressum
 # Contact
 
 Simonett Software Engineering
-Strandweg 7
-3400 Burgdorf, Switzerland
+Zelgstrasse 25
+3186 Düdingen, Switzerland
 
 E-mail: hello@northway.blog
 

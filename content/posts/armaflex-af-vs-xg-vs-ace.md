@@ -45,8 +45,5 @@ Other brands are producing similar stuff to Armaflex. I did not use this myself 
 <div class="mt-6">
   <external-link href="https://amzn.to/37Y1iD9" track-goal-id="YI7DZLLU">👉 K-Flex on Amazon DE</external-link>
 </div>
-<div class="mt-6">
-  <external-link href="https://amzn.to/2WZhlR6" track-goal-id="JVZY6GI1">👉 K-Flex on Amazon **USA** (similar product)</external-link>
-</div>
 
 If you have any further question or if you want to connect, send us a DM on Instagram @oh.north or send us an email to hello@northway.blog

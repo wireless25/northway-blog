@@ -10,49 +10,48 @@ en: how-much-solar-power-do-i-need
 de: wie-viel-solar-panels-brauche-ich
 ---
 
-In diesem kurzen Beitrag werde ich Ihnen helfen, herauszufinden, wie viel Solarstrom für Ihren Zweck am besten geeignet ist. Dabei geht es vor allem um ein Wohnmobil, aber auch um kleine stationäre Anlagen wie eine kleine, netzunabhängige Hütte.
+In diesem kurzen Beitrag möchte ich dir helfen herauszufinden, welche Solarenergielösung am besten zu deinen Bedürfnissen passt. Ich fokussiere mich hauptsächlich auf Campingbusse, aber meine Tipps sind auch für kleine stationäre Setups wie eine kleine Off-Grid-Hütte relevant.
 
-## TL:DR
+## Zusammenfassung (TL:DR)
 
-Wenn Sie zu den faulen Leuten gehören und einfach nur eine Solaranlage auf Ihrem Transporter haben wollen, ohne viel darüber nachzudenken, dann kommt hier mein TL:DR-Solartipp:
-Für kleine bis mittelgroße Wohnmobile wie einen VW-Bus, einen Ford Transit oder sogar den kleinen Sprinter von Mercedes sollten Sie sich für eine 200-Watt-Anlage entscheiden. Das reicht für die meisten Leute mit solchen Vans und einem durchschnittlichen Energiebedarf. Mit dieser Anlage können Sie einen Kühlschrank, einige Ladegeräte für Smartphones und Laptops sowie einige Lampen im Transporter problemlos mit Strom versorgen.
-Um dies zu erreichen, benötigen Sie Solarmodule mit einer Spitzenleistung von 200 Watt, in den meisten Fällen 2 Module mit je 100Wp, einen Laderegler mit 10A und einige 6mm² Kabel, wenn Sie sie in Reihe schalten. Bumm, das war's. 🔥
+Wenn du eher der Typ bist, der nicht viel nachdenken möchte und einfach ein Solarsystem für deinen Van haben will, hab ich hier einen schnellen Tipp für dich:
+Für kleine bis mittelgroße Camper wie VW-Busse, Ford Transits oder sogar die kleinen Sprinter von Mercedes reicht ein 200-Watt-System aus. Das dürfte für die meisten Leute mit solchen Vans und einem durchschnittlichen Energiebedarf ausreichend sein. Damit kannst du locker einen Kühlschrank, ein paar Ladegeräte für Smartphones und Laptops sowie ein paar Lampen im Van betreiben.
+Was du dafür brauchst? Solarpanels mit einer Leistung von 200 Watt Peak, meistens 2 Panels mit jeweils 100Wp, einen Laderegler mit 10A und ein paar 6mm² Kabel, wenn du sie in Reihe schaltest. Ganz easy. 🔥
 
-Wenn Sie wissen möchten, warum das so ist, lesen Sie weiter und erfahren Sie, wie Sie Ihr System selbst berechnen können.
+Falls du wissen willst, warum das so ist, lies weiter und ich zeige dir, wie du dein System selbst berechnen kannst.
 
-## Wo man ansetzen kann
+## Wo fangen wir an?
 
-Herauszufinden, wie viel Solarstrom benötigt wird, ist gar nicht so schwer. Im Grunde müssen Sie nur wissen, wie viel Energie Sie in einem bestimmten Zeitraum verbrauchen werden und wo auf der Welt und wann im Jahr Ihre Anlage die meiste Zeit genutzt wird. Der Standort und die Nutzung während des Jahres sind wichtig, weil die Sonne an einem kalten, bewölkten Herbsttag in Norwegen nicht die gleiche Energiemenge liefert wie an einem sonnigen Sommertag in Südspanien. Aber dazu später mehr.
+Es ist eigentlich nicht so schwer herauszufinden, wie viel Solarenergie du brauchst. Du musst nur wissen, wie viel Energie du innerhalb einer bestimmten Zeit verbrauchst und wo auf der Welt und wann im Jahr dein Setup hauptsächlich genutzt wird. Standort und Nutzung über das Jahr sind entscheidend, weil die Sonneneinstrahlung an einem kalten, bewölkten Herbsttag in Norwegen nicht die gleiche ist wie an einem sonnigen Sommertag im Süden Spaniens. Aber dazu später mehr.
 
-## Berechnen Sie Ihren Bedarf
+## Berechne deine Bedürfnisse
 
-Die Formel ist ziemlich einfach. Zählen Sie den Stromverbrauch aller elektrischen Geräte an einem Tag zusammen, und Sie sind startklar. Wie bitte? Aber wie? werden Sie jetzt vielleicht fragen.
-Ganz einfach: Auf praktisch jedem Gerät, oder auf dem Ladegerät, wenn es extern ist, ist vermerkt, wie viel Strom (gemessen in Watt) es braucht. Befolgen Sie einfach die folgenden 5 einfachen Schritte und Sie sind fertig:
+Die Formel ist eigentlich ziemlich einfach: Addiere den Stromverbrauch all deiner elektronischen Geräte an einem Tag und du bist fast schon fertig. Moment mal? Wie soll das gehen, fragst du? Ganz einfach: Die meisten Geräte oder Ladegeräte haben Angaben zur Leistung (gemessen in Watt) draufstehen. Folge einfach diesen 5 simplen Schritten und du bist im Bilde:
 
-1. Suchen Sie alle elektronischen Geräte, die Sie benutzen werden.
-2. Prüfen Sie, wie viel Strom dieses Gerät verbraucht (Aufkleber auf dem Gerät oder auf dem Ladegerät)
-3. Überlegen Sie, wie viele Stunden Sie dieses Gerät an einem typischen Tag benutzen werden
-4. Multiplizieren Sie die Watt mit den Stunden, die Sie das Gerät benutzen => Sie erhalten die Wattstunden (Wh), die den Stromverbrauch messen
-5. Addieren Sie alle Wh-Werte, um den endgültigen Gesamtstromverbrauch Ihres Geräts für einen Tag zu erhalten.
+1. Finde alle elektronischen Geräte, die du nutzen wirst.
+2. Schau nach, wie viel Leistung jedes Gerät benötigt (steht auf dem Gerät oder dem Ladegerät).
+3. Überlege, wie viele Stunden du jedes Gerät an einem typischen Tag nutzen wirst.
+4. Multipliziere die Watt mit den Stunden, die du das Gerät nutzen wirst => du erhältst die Wattstunden (Wh), die deinen Energieverbrauch messen.
+5. Addiere alle Wh-Werte, die du erhalten hast, und du hast deinen täglichen Stromverbrauch für dein Setup.
 
-> Wenn Sie auf dem Gerät keine Hinweise zum Stromverbrauch finden, versuchen Sie es im Handbuch oder konsultieren Sie Mr. Google.
+> Wenn du keine Hinweise zum Stromverbrauch findest, schau ins Handbuch oder frag Mr. Google.
 
-## Ermitteln Sie die benötigte Solarenergie
+## Ermittle die benötigte Solarenergie
 
-Um dies genau zu berechnen, müssen wir eine Menge Dinge berücksichtigen, und es wird schnell sehr kompliziert. Deshalb werden wir mit einigen Standard- und Praxiswerten rechnen. Für die meisten Menschen wird dies einen ersten Eindruck davon vermitteln, wie groß Ihre Solaranlage sein sollte.
+Um das ganz genau zu berechnen, müssten wir viele Dinge berücksichtigen und es wird ziemlich kompliziert. Deshalb werde ich mit einigen Standard- und praktischen Werten arbeiten, um dir einen ersten Eindruck zu geben, wie groß dein Solarsystem sein sollte.
 
-Da wir nun wissen, wie viel Energie wir mit unserer netzunabhängigen Anlage verbrauchen werden, müssen Sie wissen, wo und wann im Jahr Sie Ihre Anlage am meisten nutzen werden. Wenn Sie sie nur im Sommer nutzen, können Sie sie etwas kleiner bauen. Wenn Sie sie das ganze Jahr über nutzen und zum Beispiel in Nordeuropa leben, müssen Sie sie größer dimensionieren. Um herauszufinden, wie viel Energie Sie in Ihrer Gegend bekommen können, gehen Sie zu [globalsolaratlas.info](https://globalsolaratlas.info/) und suchen Sie nach Ihrem Standort. Es muss nicht besonders genau sein, da du mit deinem Wohnmobil sowieso herumreisen wirst.
+Jetzt, wo wir wissen, wie viel Energie unser Off-Grid-Setup benötigt, musst du wissen, wo und wann im Jahr du dein Setup hauptsächlich nutzen wirst. Wenn du es nur im Sommer benutzt, kannst du es etwas kleiner dimensionieren. Wenn du es das ganze Jahr über nutzt und beispielsweise in Nordeuropa lebst, musst du es größer machen. Um herauszufinden, wie viel Energie du an deinem Standort bekommst, schau auf [globalsolaratlas.info](https://globalsolaratlas.info/) nach. Es muss nicht super genau sein, da du sowieso mit deinem Wohnmobil herumreisen wirst.
 
-Wenn ich das für Basel mache, eine Stadt in der Schweiz, die ziemlich genau in der Mitte Westeuropas liegt, erhalte ich einen Wert von 3,184 kWh/m² potenzieller Energie pro Tag über das Jahr. Die Faustregel besagt, dass 2/3 dieser Energie in den 6 Monaten des Sommerhalbjahres auf den Boden fällt.
+Wenn ich das für Basel, eine Stadt in der Schweiz, mache, erhalte ich einen Wert von 3.184 kWh/m² an potenzieller Energie pro Tag über das Jahr. Die Faustregel besagt, dass 2/3 dieser Energie in den 6 Monaten des Sommerhalbjahres auf den Boden treffen werden.
 
-Die Leistung von Solarmodulen wird in der Regel in Watt Peak gemessen. Die Messung bedeutet, dass das Modul 100 W liefern kann, wenn:
+Die Kapazität von Solarpanels wird typischerweise in Watt Peak gemessen. Das bedeutet, dass das Panel 100W liefern kann, wenn:
 
 - Die Sonne liefert 1.000 W/m²
 - Die Modultemperatur beträgt 25 °C.
 
-Wir erhalten die gleiche Energie, wenn wir davon ausgehen, dass nur 3,184 Stunden Sonnenschein zur Verfügung stehen und die Watt-Peak-Messung von 1.000 W/m² für unser Modul gilt. Jetzt ist es ganz einfach, das tägliche Potenzial während des Jahres zu berechnen.
+Wir erhalten die gleiche Energie, wenn wir davon ausgehen, dass nur 3.184 Stunden Sonnenschein mit der Watt-Peak-Messung von 1.000 W/m² von unserem Panel verfügbar sind. Jetzt ist es super einfach, die tägliche potenzielle Energie während des Jahres zu berechnen.
 
-Das bedeutet, dass wir einfach unseren Energiebedarf in Wh, den wir zuvor summiert haben, durch den kWh/m²-Wert teilen können. Daraus ergibt sich eine sehr grobe Zahl von Wp, die Sie auf Ihrem Dach benötigen.
+Das bedeutet, wir können einfach unseren Energiebedarf in Wh, den wir zuvor berechnet haben, durch den kWh/m²-Wert teilen. Das ergibt eine sehr grobe Schätzung der Watt Peak, die du auf deinem Dach brauchst.
 
 ```text
 Braucht: 560Wh
@@ -60,17 +59,17 @@ Standort: Basel - 3.184kWh/m²
 Berechnung: 560 / 3.184 ~ 175
 ```
 
-In dem oben beschriebenen Szenario würde ich zu einer Anlage mit mindestens 200Wp tendieren (man kann nie zu viel Solarstrom haben). Das sollte ausreichen, um Ihren täglichen Strombedarf zu decken.
+In diesem Szenario würde ich mich dazu tendieren, mindestens ein 200Wp-Setup zu wählen (man kann nie zu viel Solarenergie haben, niemals). Das sollte solide sein, um deinen täglichen Energiebedarf zu decken.
 
-In den Wintermonaten werden Sie mit diesen 200 Wp vielleicht nicht genug Energie erhalten, im Sommer werden die Batterien jedoch immer voll geladen sein.
+In den Wintermonaten wirst du vielleicht nicht genug Energie mit diesen 200Wp bekommen, im Sommer allerdings werden die Batterien die ganze Zeit voll aufgeladen sein.
 
-Dies ist ein Ausgangspunkt, um herauszufinden, ob Sie ein 100-Wp-Panel auf Ihrem Dach oder 5 davon benötigen. Bei diesen Berechnungen handelt es sich nicht um eine exakte Wissenschaft, sondern eher um eine Faustformel, die jedoch auf realen lokalen Daten beruht.
+Es ist ein Startpunkt, um herauszufinden, ob du ein 100Wp-Panel auf deinem Dach oder 5 davon brauchst. Diese Berechnungen sind keine exakte Wissenschaft, sondern eher als Faustregel zu verstehen, jedoch mit echten lokalen Daten.
 
-Jetzt ist es an der Zeit, einige Paneele zu kaufen? Ich habe wirklich gute Ergebnisse mit Modulen erzielt, die Zellen von [Sun Power](https://us.sunpower.com/) verwenden. Das ist eine Firma aus den USA, und wir verwenden seit Jahren Paneele mit Sun Power-Zellen und sind nie enttäuscht worden. Nachfolgend eine Liste von Produkten, die wir in unserem Van verwenden und die ich empfehlen kann. Alle Links führen zu Amazon DE aus dem Offgridtec-Shop, einer hervorragenden Quelle für Solarprodukte.
+Jetzt ist es Zeit, ein paar Panels zu kaufen? Ich habe wirklich gute Erfahrungen mit Panels gemacht, die Zellen von [Sun Power](https://us.sunpower.com/) verwenden. Es ist eine Firma aus den USA und wir verwenden seit Jahren Panels mit Sun Power-Zellen, wurden nie enttäuscht. Hier ist eine Liste von Produkten, die wir in unserem Van verwenden und die ich empfehlen kann. Alle Links führen zu Amazon DE vom Offgridtec Store, eine großartige Quelle für Solartechnik.
 
 ### Panels
-<external-link href="https://amzn.to/3mNpQt4" track-goal-id="ZZ5XKUB7">
-  👉 110WP flexibles Solarmodul mit Sun Power Zellen
+<external-link href="https://amzn.to/41MMN1T" track-goal-id="ZZ5XKUB7">
+  👉 80WP flexibles Solarmodul mit Sun Power Zellen
 </external-link>
 
 <div class="mt-6">
@@ -86,9 +85,9 @@ Jetzt ist es an der Zeit, einige Paneele zu kaufen? Ich habe wirklich gute Ergeb
 </div>
 
 ### Laderegler
-Ich liebe die Produkte von [Victron Energy](https://www.victronenergy.com). Viele Geräte haben Bluetooth eingebaut, so dass man sie mit seinem Smartphone verbinden kann. Mit der Victron-App können Sie Ihr System überwachen und Ihre Lasten im Auge behalten.
+Ich liebe die Produkte von [Victron Energy](https://www.victronenergy.com). Viele Geräte haben Bluetooth eingebaut, so dass man sie mit seinem Smartphone verbinden kann. Mit der Victron-App kannst du dein System überwachen und die Lasten im Auge behalten.
 
-<external-link href="https://amzn.to/3kCozlP" track-goal-id="A8IGRLYH">
+<external-link href="https://amzn.to/4aCwh8Z" track-goal-id="A8IGRLYH">
   👉 Laderegler von Victron
 </external-link>
 
@@ -106,11 +105,11 @@ Auch hier kann ich die Produkte von [Victron Energy](https://www.victronenergy.c
 </div>
 
 ### Komplettsystem
-Wer das "Rundum-Sorglos-Paket" mag, könnte sich für ein Komplettsystem von Offgridtec entscheiden. Sie enthalten alles, was Sie brauchen, auch für die Montage an Ihrem Fahrzeug. Bis auf die Batterie ist alles im Lieferumfang enthalten; Sie müssen sich nicht mit der Berechnung von Kabeldurchmessern und ähnlichem herumärgern.
+Wer das "Rundum-Sorglos-Paket" mag, könnte sich für ein Komplettsystem von Offgridtec entscheiden. Du enthälst alles, was du brauchst, auch für die Montage an deinem Fahrzeug. Bis auf die Batterie ist alles im Lieferumfang enthalten; Du musst dich nicht mit der Berechnung von Kabeldurchmessern und ähnlichem herumärgern.
 Ich verlinke ein 200WP System, das für einen VW Bus mit durchschnittlichem Energiebedarf ideal geeignet ist.
 
 <external-link href="https://amzn.to/3jtwUJy" track-goal-id="LJ825E0W">
   👉 200WP Offgridtec Komplettsystem
 </external-link>
 
-Wenn Sie weitere Fragen haben oder sich mit uns in Verbindung setzen wollen, schicken Sie uns eine DM auf Instagram [@oh.north](https://www.instagram.com/oh.north/) oder eine E-Mail an [hello@northway.blog](mailto:hello@northway.blog)
+Wenn du weitere Fragen hast oder dich mit uns in Verbindung setzen willst, schick uns eine DM auf Instagram [@oh.north](https://www.instagram.com/oh.north/) oder eine E-Mail an [hello@northway.blog](mailto:hello@northway.blog)

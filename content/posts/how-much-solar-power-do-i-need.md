@@ -69,8 +69,8 @@ It's a starting point to find out if you need a 100Wp panel on your roof or 5 of
 Now it is time to buy some panels? I made really good results with panels that use cells from [Sun Power](https://us.sunpower.com/). It's a company from the US and we use panels with Sun Power cells for years now, never disappointed. Following a list of products, we use in our van, which I can recommend. All links lead to Amazon DE from the Offgridtec store, an excellent source for solar products.
 
 ### Panels
-<external-link href="https://amzn.to/3mNpQt4" track-goal-id="ZZ5XKUB7">
-  👉 110WP flexible solar panel with Sun Power cells
+<external-link href="https://amzn.to/41MMN1T" track-goal-id="ZZ5XKUB7">
+  👉 80WP flexible solar panel with Sun Power cells
 </external-link>
 
 <div class="mt-6">
@@ -88,7 +88,7 @@ Now it is time to buy some panels? I made really good results with panels that u
 ### Charge controllers
 I love products from [Victron Energy](https://www.victronenergy.com). A lot of devices have built-in Bluetooth so that you can connect them with your Smartphone. On the Victron app, you can monitor your system and keep track of your loads.
 
-<external-link href="https://amzn.to/3kCozlP" track-goal-id="A8IGRLYH">
+<external-link href="https://amzn.to/4aCwh8Z" track-goal-id="A8IGRLYH">
   👉 Charge controllers from Victron
 </external-link>
 

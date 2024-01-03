@@ -10,19 +10,19 @@ en: how-to-fix-slow-retracting-seat-belts
 de: schlecht-einziehenden-gurt-gaengig-machen
 ---
 
-Es handelt sich um ein allgemein bekanntes Problem. Der Sicherheitsgurt wird nicht mehr richtig aufgerollt. Das ist nicht nur ärgerlich, weil der Sicherheitsgurt beim Aussteigen aus dem Auto im Weg ist, sondern auch, weil er beim Schließen der Tür stecken bleiben kann. Darüber hinaus kann es gefährliche Folgen haben, weil der Gurt nicht mehr richtig funktioniert. Je früher man ihn also repariert, desto besser.
+Du kennst das sicherlich: Der Sicherheitsgurt rollt sich nicht mehr ordentlich auf. Das nervt nicht nur, wenn du aus dem Auto steigst und der Gurt im Weg ist, sondern kann auch dazu führen, dass er sich beim Schließen der Tür verhakt. Das ist nicht nur ärgerlich, sondern auch gefährlich, weil der Gurt dann nicht mehr richtig funktioniert. Deshalb ist es wichtig, ihn so früh wie möglich zu reparieren.
 
-## Aber wieso?
+## Aber warum passiert das überhaupt?
 
-Gute Frage: Was ist der Grund für dieses Problem? Meistens ist es eine Kombination aus altem Auto und Schmutz auf dem Riemen und dem Riemenspanner. Eine gute alte Reinigung behebt das Problem in den meisten Fällen.
+Nun, meistens liegt es an einer Kombination aus einem älteren Auto und Schmutz, der sich auf dem Gurt und dem Gurtstraffer angesammelt hat. In den meisten Fällen hilft schon eine gründliche Reinigung.
 
-## Den Gurt reinigen
+## So reinigst du den Gurt
 
-Sie können den Gurt nun mit Seifenwasser reinigen, indem Sie den kompletten Gurt abrollen, ihn irgendwie mit einer Klammer befestigen und ihn gut abreiben. Lassen Sie ihn vollständig trocknen, bevor Sie ihn wieder in den Gurtstraffer rollen. Es gibt jedoch eine viel einfachere und schnellere Methode, um das gleiche oder sogar ein besseres Ergebnis zu erzielen.
+Du kannst den Gurt mit Seifenwasser säubern, indem du ihn komplett abrollst, irgendwie festklemmst und gründlich abreibst. Lass ihn vollständig trocknen, bevor du ihn wieder aufrollst. Aber es gibt auch eine viel einfachere und schnellere Methode, um dasselbe oder sogar bessere Ergebnisse zu erzielen.
 
-## Die magische Zutat
+## Die Geheimwaffe
 
-Um den Sicherheitsgurt wieder wie neu aufzurollen, können Sie Silikonspray verwenden. Klingt seltsam? Vielleicht, für mich war es das am Anfang auch, aber es funktioniert. Alles was Sie brauchen ist Silikonspray und ein gutes Mikrofasertuch. Rollen Sie zunächst den kompletten Sicherheitsgurt auf und fixieren Sie ihn mit einer Klammer. Dann sprühen Sie einen dünnen Film auf den Gurt. Lassen Sie es kurz einwirken und reiben Sie den Gurt mit dem Mikrofasertuch ab. Sie werden etwas Schmutz im Handtuch sehen. Wiederholen Sie diesen Vorgang ein paar Mal, bis nach dem Abreiben des Gürtels kein Schmutz mehr auf dem Mikrofasertuch zu sehen ist. Jetzt können Sie den Clip lösen und den Sicherheitsgurt wie neu aufrollen.
+Um den Sicherheitsgurt wieder wie neu aufzurollen, kannst du Silikonspray verwenden. Klingt komisch? Mag sein, das dachte ich am Anfang auch, aber es funktioniert tatsächlich. Alles was du brauchst, ist Silikonspray und ein gutes Mikrofasertuch. Roll den kompletten Sicherheitsgurt zuerst aus und klemme ihn fest. Dann sprühst du einen dünnen Film auf den Gurt. Lass es kurz einwirken und reib den Gurt dann mit dem Mikrofasertuch ab. Du wirst etwas Schmutz auf dem Tuch sehen. Wiederhol diesen Vorgang ein paar Mal, bis nach dem Abreiben des Gurtes kein Schmutz mehr sichtbar ist. Jetzt kannst du die Klammer lösen und den Sicherheitsgurt wieder wie neu aufrollen.
 
 <img src="https://res.cloudinary.com/simonett-software-engineering/image/upload/v1618605831/northway-blog/mind-blown.gif" alt="Man with mind blown gester">
 
