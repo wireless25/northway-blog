@@ -6,9 +6,9 @@ de: impressum
 
 # Kontakt
 
-Simonett Software-Entwicklung
-Strandweg 7
-3400 Burgdorf, Schweiz
+Simonett Software Engineering
+Zelgstrasse 25
+3186 Düdingen, Schweiz
 
 E-Mail: hello@northway.blog
 
