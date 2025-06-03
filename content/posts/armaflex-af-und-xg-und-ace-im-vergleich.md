@@ -36,14 +36,14 @@ Zunächst einmal sollten Sie kein ACE verwenden. Es ist zwar billiger, aber die 
 
 Wenn es darum geht, Armaflex zu kaufen, kann es ein wenig knifflig werden. In der Schweiz, wo wir leben, kann man Armaflex nur in speziellen Geschäften für Dämmstoffe und andere Baumaterialien kaufen, was sehr teuer ist. Die beste Möglichkeit, Armaflex zu bekommen, ist also Amazon. Aber Vorsicht, es gibt viele Anbieter und Angebote, die ein wenig unseriös sind. Manchmal bekommt man den billigeren ACE ohne weitere Ankündigung. Lesen Sie also unbedingt die Bewertungen des Verkäufers, bevor Sie bestellen. Wenn du deine Sachen von amazon.de bekommst, habe ich die Recherche bereits für dich erledigt. Sie können den untenstehenden Link benutzen und bei "isolierprofi" kaufen. Ich habe diesen Verkäufer selbst getestet und war mit der Lieferung sehr zufrieden.
 
-<external-link href="https://amzn.to/2tVhXbw" track-goal-id="KG8A2SRV">👉 Armaflex auf Amazon</external-link>
+<external-link href="https://amzn.to/2tVhXbw" track-goal-id="KG8A2SRV" umami-event-product="armaflex">👉 Armaflex auf Amazon</external-link>
 
 Andere Marken stellen ähnliche Produkte wie Armaflex her. Ich habe diese nicht selbst verwendet und nicht viel über sie recherchiert, also machen Sie Ihre Hausaufgaben, wenn Sie diese stattdessen verwenden möchten.
 
-<external-link href="https://amzn.to/2QLOQk7" track-goal-id="J8MQOL0O">👉 Kaiflex auf Amazon</external-link>
+<external-link href="https://amzn.to/2QLOQk7" track-goal-id="J8MQOL0O" umami-event-product="kaiflex">👉 Kaiflex auf Amazon</external-link>
 
 <div class="mt-6">
-  <external-link href="https://amzn.to/37Y1iD9" track-goal-id="YI7DZLLU">👉 K-Flex auf Amazon</external-link>
+  <external-link href="https://amzn.to/37Y1iD9" track-goal-id="YI7DZLLU" umami-event-product="k-flex">👉 K-Flex auf Amazon</external-link>
 </div>
 
 Wenn Sie weitere Fragen haben oder sich mit uns in Verbindung setzen wollen, schicken Sie uns eine DM auf Instagram @oh.north oder eine E-Mail an hello@northway.blog

@@ -4,6 +4,7 @@
     rel="nofollow noopener noreferrer"
     target="_blank"
     data-umami-event="amazon-affiliate-click"
+    :data-umami-event-product="umamiEventProduct"
   >
     <slot />
   </a>
@@ -18,6 +19,10 @@ export default {
       required: true,
     },
     trackGoalId: {
+      type: String,
+      default: '',
+    },
+    umamiEventProduct: {
       type: String,
       default: '',
     },
