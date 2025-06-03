@@ -3,9 +3,8 @@ const fantomAnalytics = () => {
     return {}
   }
   return {
-    src: 'https://cdn.usefathom.com/script.js',
-    'data-site': 'CJQXCHJL',
-    'data-spa': 'auto',
+    src: 'https://cloud.umami.is/script.js',
+    'data-website-id': 'b693b4b4-2c29-40f4-a020-3bfeafa0affb',
     defer: true,
   }
 }
