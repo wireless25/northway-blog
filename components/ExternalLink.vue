@@ -3,7 +3,7 @@
     :href="href"
     rel="nofollow noopener noreferrer"
     target="_blank"
-    @click="sendTrackGoal"
+    data-umami-event="amazon-affiliate-click"
   >
     <slot />
   </a>
@@ -20,14 +20,6 @@ export default {
     trackGoalId: {
       type: String,
       default: '',
-    },
-  },
-  methods: {
-    sendTrackGoal() {
-      if (!process.client || !('fathom' in window) || !this.trackGoalId) {
-        return
-      }
-      window.fathom.trackGoal(this.trackGoalId, 0)
     },
   },
 }
